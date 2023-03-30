@@ -1,6 +1,6 @@
 import './App.scss';
 import Header from "./components/Header/header";
-import Footer from "./components/Footer/Footer";
+import NationalFoods from "./components/NationalFoods/National-Foods";
 import {Route, Routes} from "react-router-dom";
 import Hero from "./components/Hero/hero";
 import MenuCategories from "./components/Menu-Categories/Menu-Categories";
@@ -10,11 +10,11 @@ function App() {
         <>
             <Header/>
             <Hero/>
+            <NationalFoods/>
             <MenuCategories/>
             <Routes>
                 <Route/>
             </Routes>
-            <Footer/>
         </>
     );
 }

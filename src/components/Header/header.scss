@@ -1,20 +1,25 @@
-#header{
-  .header{
+#header {
+  .header {
     padding: 20px 0;
-    &--burger{
+
+    &--burger {
       font-size: 40px;
     }
 
-    img{
+    img {
       width: 16%;
     }
   }
 }
 
+//  Burger-Menu
+
+
+
 @media (max-width: 992px) {
-  #header{
-    .header{
-      img{
+  #header {
+    .header {
+      img {
         width: 8%;
       }
     }
@@ -22,17 +27,20 @@
 }
 
 @media (max-width: 655px) {
-  #header{
-    .header{
+  #header {
+    .header {
       justify-content: space-between;
-      img{
+
+      img {
         width: 10%;
       }
     }
   }
-}@media (max-width: 550px) {
-  #header{
-    .header{
+}
+
+@media (max-width: 550px) {
+  #header {
+    .header {
       padding: 20px 20px;
     }
   }
@@ -41,12 +49,13 @@
 @media (max-width: 451px) {
   #header {
     .header {
-      h1{
+      h1 {
         font-size: 30px;
       }
-     img{
-       width: 12%;
-     }
+
+      img {
+        width: 12%;
+      }
     }
   }
 }
@@ -54,28 +63,12 @@
 @media (max-width: 376px) {
   #header {
     .header {
-      &--burger{
-        font-size: 38px;
-      }
-      h1{
-        font-size: 28px;
-      }
-     img{
-       width: 14%;
-     }
-    }
-  }
-}
-
-@media (max-width: 321px) {
-  #header {
-    .header {
       &--burger {
-        font-size: 36px;
+        font-size: 38px;
       }
 
       h1 {
-        font-size: 26px;
+        font-size: 28px;
       }
 
       img {
@@ -84,3 +77,22 @@
     }
   }
 }
+
+@media (max-width: 321px) {
+  #header {
+    .header {
+      &--burger {
+        font-size: 34px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      img {
+        width: 15%;
+      }
+    }
+  }
+}
+
