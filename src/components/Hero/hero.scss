@@ -1,0 +1,340 @@
+#hero {
+  padding-top: 50px;
+
+  .hero {
+    &--overview {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &--hello {
+      color: #F86D3B;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &--search {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      &__icon {
+        font-size: 20px;
+      }
+
+      &__input {
+        padding-left: 10px;
+      }
+    }
+
+    &--ad {
+      margin-top: 30px;
+      background: #F86D3B1A;
+      border-radius: 15px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      &__one {
+        img {
+          width: 250px;
+        }
+      }
+
+      &__two {
+        text-align: center;
+
+        &--hot {
+          font-size: 22px;
+          color: #F86D3B;
+          font-weight: 600;
+        }
+
+        &--burger {
+          font-size: 22px;
+          color: #F86D3B;
+          font-weight: 600;
+        }
+
+        &--sale {
+          font-size: 16px;
+          font-weight: 600;
+          color: black;
+          padding: 5px 0 12px 0;
+        }
+
+        &--btn {
+          background: #F86D3B;
+          border-radius: 10px;
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 5px 10px;
+        }
+
+        &--btn:hover {
+          background: rgba(248, 109, 59, 0.87);
+          border-radius: 10px;
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    padding-top: 50px;
+
+    &--title {
+      &__menu {
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+
+    &--mySwiper {
+      padding-top: 20px;
+
+      &__card {
+        background: #FAF9F9;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          font-size: 70px;
+        }
+
+        &--title {
+          color: #827B7B;
+          font-size: 15px;
+          font-weight: 500;
+          text-align: center;
+          width: 60%;
+          padding-top: 5px;
+        }
+      }
+
+      &__cardFood {
+        background: #FAF9F9;
+        padding: 19px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          font-size: 70px;
+        }
+
+        &--title {
+          color: #827B7B;
+          font-size: 15px;
+          font-weight: 500;
+          text-align: center;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    .slider {
+      &--mySwiper {
+        &__card {
+          padding: 20px 0;
+
+          .icon {
+            font-size: 50px;
+          }
+
+          &--title {
+            font-size: 12px;
+          }
+        }
+
+        &__cardFood {
+          padding: 11px 0;
+
+          .icon {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    .slider {
+      &--mySwiper {
+        &__card {
+          .icon {
+            font-size: 40px;
+          }
+
+          &--title {
+            width: 80%;
+          }
+        }
+
+        &__cardFood {
+          .icon {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #hero {
+    .hero {
+      &--ad {
+        &__one {
+          img {
+            width: 220px;
+          }
+        }
+
+        &__two {
+          &--hot {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .slider {
+      &--mySwiper {
+        &__card {
+          padding: 15px 0;
+
+          &--title {
+            font-size: 10px;
+          }
+        }
+
+        &__cardFood {
+          padding: 8px 0;
+
+          &--title {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #hero .hero--ad__two--hot {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 380px) {
+  #hero .hero--ad__one img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  #hero {
+    .hero {
+      &--ad {
+        margin-top: 15px;
+        &__one {
+          img {
+            width: 180px;
+          }
+        }
+
+        &__two {
+          &--btn {
+            font-size: 13px;
+          }
+
+          &--sale {
+            font-size: 14px;
+            padding: 5px 0 8px 0;
+          }
+        }
+      }
+    }
+
+    .slider {
+      padding-top: 20px;
+      &--title{
+        &__menu{
+          font-size: 20px;
+        }
+      }
+      &--mySwiper {
+        &__card {
+          &--title {
+            font-size: 8px;
+          }
+        }
+
+        &__cardFood {
+          &--title {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #hero {
+    .hero{
+      &--ad{
+        &__one{
+          img{
+            width: 165px;
+          }
+        }
+        &__two{
+          &--hot{
+            font-size: 15px;
+          }
+          &--burger{
+            font-size: 18px;
+          }
+          &--sale{
+            font-size: 12px;
+          }
+          &--btn{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .slider {
+      &--mySwiper {
+        &__card {
+          .icon {
+            font-size: 30px;
+          }
+        }
+
+        &__cardFood {
+          .icon {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}

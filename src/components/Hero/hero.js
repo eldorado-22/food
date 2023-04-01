@@ -1,10 +1,16 @@
 import React from 'react';
 import './hero.scss';
-import {AiOutlineSearch} from "react-icons/ai"
+import {BsSearch} from "react-icons/bs"
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
+import img from "../../components/Hero/img/image 18.png"
+import {BiDish} from "react-icons/bi"
+import {GiCakeSlice} from "react-icons/gi"
+import {GiFullPizza} from "react-icons/gi"
+import {BsCupStraw} from "react-icons/bs"
+import {BsCupHotFill} from "react-icons/bs"
 
 const Hero = () => {
     return (
@@ -14,13 +20,14 @@ const Hero = () => {
                     <h1 className="hero--overview">Overview</h1>
                     <h3 className="hero--hello">Hello Saad! Welcome Back</h3>
                     <div className="hero--search">
-                        <AiOutlineSearch className="hero--search__icon"/>
-                        <h1 className="hero--search__title">Search</h1>
+                        <BsSearch className="hero--search__icon"/>
+                        <input className="hero--search__input" type="text" placeholder="Search"/>
                     </div>
+
                     <div className="hero--ad">
 
                         <div className="hero--ad__one">
-                            <img src="src/components/Hero/img/image 18.png" alt=""/>
+                            <img src={img} alt=""/>
                         </div>
 
                         <div className="hero--ad__two">
@@ -39,41 +46,78 @@ const Hero = () => {
                     </div>
 
                     <Swiper
-                        slidesPerView={1}
+                        slidesPerView={4.5}
                         spaceBetween={10}
-                        pagination={{
-                            clickable: true,
-                        }}
                         breakpoints={{
                             640: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
+                                slidesPerView: 4.5,
+                                spaceBetween: 10,
                             },
                             768: {
-                                slidesPerView: 4,
-                                spaceBetween: 40,
+                                slidesPerView: 4.5,
+                                spaceBetween: 10,
                             },
                             1024: {
                                 slidesPerView: 5,
-                                spaceBetween: 50,
+                                spaceBetween: 10,
                             },
                         }}
                         modules={[Pagination]}
-                        className="mySwiper"
+                        className="slider--mySwiper"
                     >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
-                        <SwiperSlide>Slide 5</SwiperSlide>
-                        <SwiperSlide>Slide 6</SwiperSlide>
-                        <SwiperSlide>Slide 7</SwiperSlide>
-                        <SwiperSlide>Slide 8</SwiperSlide>
-                        <SwiperSlide>Slide 9</SwiperSlide>
+                        <SwiperSlide className="slider--mySwiper__cardFood">
+                            <BiDish className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">National foods</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <GiCakeSlice className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Desserts</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <GiFullPizza className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Pizza</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <BsCupStraw className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Cold drink</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <BsCupHotFill className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Hot drink</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__cardFood">
+                            <BiDish className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">National foods</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <GiCakeSlice className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Desserts</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <GiFullPizza className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Pizza</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <BsCupStraw className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Cold drink</h3>
+                        </SwiperSlide>
+
+                        <SwiperSlide className="slider--mySwiper__card">
+                            <BsCupHotFill className="icon"/>
+                            <h3 className="slider--mySwiper__card--title">Hot drink</h3>
+                        </SwiperSlide>
+
+
                     </Swiper>
                 </div>
-                );
-                }
             </div>
         </div>
     );
