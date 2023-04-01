@@ -8,7 +8,7 @@ import MenuCategories from "./components/Menu-Categories/Menu-Categories";
 function App() {
     return (
         <>
-            {/*<Header/>*/}
+            <Header/>
             <Hero/>
             <NationalFoods/>
             <MenuCategories/>
