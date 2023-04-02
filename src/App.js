@@ -1,15 +1,11 @@
 import './App.scss';
 import Header from "./components/Header/header";
-import NationalFoods from "./components/NationalFoods/National-Foods";
 import {Route, Routes} from "react-router-dom";
-import Hero from "./components/Hero/hero";
-import MenuCategories from "./components/Menu-Categories/Menu-Categories";
 import MyOrder from "./pages/My-Order/My-Order";
 import Message from "./pages/Message/message";
 import Settings from "./pages/Settings/settings";
 import DetailPage from "./pages/detail-page/DetailPage";
 import Index from "./components";
-import MyOrder from "./pages/My-Order/My-Order";
 
 function App() {
     return (
@@ -21,7 +17,7 @@ function App() {
                 <Route path={"/settings"} element={<Settings/>}/>
                 <Route path={"/"} element={<Index/>}/>
                 <Route path={"/detail-page"} element={<DetailPage/>}/>
-                {/*<Route path={"/my-order"} element={<MyOrder/>}/>*/}
+                <Route path={"/my-order"} element={<MyOrder/>}/>
             </Routes>
         </>
     );

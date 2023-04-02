@@ -10,7 +10,7 @@ const NationalFoods = () => {
                 <div className='national'>
                     <h1 className='mx-1'>National Foods</h1>
                     <div className='national--img my-5'>
-                        <NavLink to={"/detail_page"}>
+                        <NavLink to={"/detail-page"}>
                             <img src={manty} alt=""/>
                         </NavLink>
                     </div>

@@ -1,5 +1,7 @@
 #header {
   .header {
+    display: flex;
+    align-items: center;
     padding: 20px 0;
 
     &--burger {
@@ -293,72 +295,93 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 551px) {
   #header {
     .header {
       padding: 20px 20px;
     }
   }
+
   .burger {
     .menu {
-      width: 50%;
+      width: 100%;
+
+      &--group {
+        width: 70%;
+
+        &__icon {
+          width: 10%;
+        }
+      }
 
       &--home {
-        padding: 10px;
+        padding: 20px;
+
 
         &__block {
+          margin-right: 130px;
+
+          h3 {
+            font-size: 25px;
+          }
+
           &--icon {
-            font-size: 30px;
-            margin-right: 20px;
+            font-size: 37px;
           }
         }
       }
 
       &--order {
-        padding: 10px;
+        padding: 20px;
 
         &__block {
+          margin-right: 130px;
+
           h3 {
-            font-size: 23px;
+            font-size: 25px;
           }
 
           &--icon {
-            font-size: 30px;
-            margin-right: 20px;
+            font-size: 37px;
+            margin-right: 30px;
           }
         }
+
       }
 
       &--message {
-        padding: 10px;
+        padding: 20px;
+
 
         &__block {
+          margin-right: 90px;
+
           h3 {
-            font-size: 23px;
+            font-size: 25px;
           }
 
           &--icon {
-            font-size: 30px;
-            margin-right: 20px;
+            font-size: 37px;
           }
         }
       }
 
       &--settings {
-        padding: 10px;
+        padding: 20px;
 
         &__block {
+          margin-right: 110px;
+
           h3 {
-            font-size: 23px;
+            font-size: 25px;
           }
 
           &--icon {
-            font-size: 30px;
-            margin-right: 20px;
+            font-size: 37px;
+            margin-right: 30px;
           }
         }
       }
-
     }
   }
 }
@@ -378,10 +401,10 @@
 
   .burger {
     .menu {
-      width: 60%;
+      width: 100%;
 
       &--group {
-        width: 50%;
+        width: 80%;
       }
     }
   }
@@ -417,7 +440,8 @@
       }
 
       &--home {
-        padding: 10px ;
+        padding: 10px;
+
         &__block {
           margin-right: 130px;
 
@@ -493,17 +517,95 @@
   #header {
     .header {
       &--burger {
-        font-size: 34px;
+        font-size: 30px;
       }
 
       h1 {
-        font-size: 26px;
+        font-size: 25px;
       }
 
       img {
-        width: 15%;
+        width: 18%;
       }
     }
   }
+
+  .burger {
+    .menu {
+      width: 100%;
+
+
+      &--home {
+        padding: 10px;
+
+
+        &__block {
+          margin-right: 100px;
+
+          h3 {
+            font-size: 25px;
+          }
+
+          &--icon {
+            font-size: 33px;
+          }
+        }
+      }
+
+      &--order {
+        padding: 13px;
+
+        &__block {
+          margin-right: 95px;
+
+          h3 {
+            font-size: 25px;
+          }
+
+          &--icon {
+            font-size: 33px;
+            margin-right: 32px;
+          }
+        }
+
+      }
+
+      &--message {
+        padding: 10px;
+
+
+        &__block {
+          margin-right: 75px;
+
+          h3 {
+            font-size: 25px;
+          }
+
+          &--icon {
+            font-size: 33px;
+            margin-right: 20px;
+          }
+        }
+      }
+
+      &--settings {
+        padding: 10px;
+
+        &__block {
+          margin-right: 78px;
+
+          h3 {
+            font-size: 25px;
+          }
+
+          &--icon {
+            font-size: 33px;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
