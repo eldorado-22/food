@@ -4,16 +4,18 @@ import NationalFoods from "./components/NationalFoods/National-Foods";
 import {Route, Routes} from "react-router-dom";
 import Hero from "./components/Hero/hero";
 import MenuCategories from "./components/Menu-Categories/Menu-Categories";
+import DetailPage from "./pages/detail-page/DetailPage";
+import Index from "./components";
+import MyOrder from "./pages/My-Order/My-Order";
 
 function App() {
     return (
         <>
             <Header/>
-            <Hero/>
-            <NationalFoods/>
-            <MenuCategories/>
             <Routes>
-                <Route/>
+                <Route path={"/"} element={<Index/>}/>
+                <Route path={"/detail_page"} element={<DetailPage/>}/>
+                <Route path={"/my-order"} element={<MyOrder/>}/>
             </Routes>
         </>
     );
