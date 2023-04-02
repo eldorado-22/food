@@ -4,6 +4,9 @@ import NationalFoods from "./components/NationalFoods/National-Foods";
 import {Route, Routes} from "react-router-dom";
 import Hero from "./components/Hero/hero";
 import MenuCategories from "./components/Menu-Categories/Menu-Categories";
+import MyOrder from "./pages/My-Order/My-Order";
+import Message from "./pages/Message/message";
+import Settings from "./pages/Settings/settings";
 
 function App() {
     return (
@@ -13,7 +16,9 @@ function App() {
             <NationalFoods/>
             <MenuCategories/>
             <Routes>
-                <Route/>
+                <Route path={"/order"} element={<MyOrder/>}/>
+                <Route path={"/message"} element={<Message/>}/>
+                <Route path={"/settings"} element={<Settings/>}/>
             </Routes>
         </>
     );
