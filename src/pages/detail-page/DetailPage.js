@@ -3,7 +3,14 @@ import './DetailPage.scss'
 import {NavLink} from "react-router-dom";
 import manty1 from "../../assets/img/Group 26.png"
 const DetailPage = () => {
-    const [counter,setCounter] = useState(0)
+    const [counter,setCounter] = useState(1)
+    const getCash = () => {
+      if (counter > 1){
+          return setCounter(counter - 1)
+      }else {
+          return false
+      }
+    }
     return (
         <section id='detail'>
             <div className='container'>
@@ -19,7 +26,7 @@ const DetailPage = () => {
                             <h1>manti</h1>
                         </div>
                         <div className='detail--block__state'>
-                            <span className='cursor-pointer' onClick={() => setCounter(counter - 1)}>-</span>
+                            <span className='cursor-pointer' onClick={getCash}>-</span>
                             <h1>{counter}x</h1>
                             <button onClick={() => setCounter( counter + 1)}>+</button>
                         </div>
