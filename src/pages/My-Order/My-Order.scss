@@ -1,0 +1,108 @@
+#orders{
+  .orders{
+    h1{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #000000;
+    }
+    &--block{
+      border: 1px solid #F86D3B;
+      border-radius: 5px 13px 10px 0;
+      box-sizing: border-box;
+      background: #FAF9F9;
+      &__image{
+        h1{
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #F86D3B;
+        }
+      }
+      &__state{
+        span{
+          text-align: center;
+          width: 35px;
+          height: 25px;
+          background: #F3F2F2;
+          border-radius: 6px;
+        }
+        button{
+          width: 35px;
+          height: 25px;
+          background: #F86D3B;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  .pay{
+    margin-top: 4%;
+    h1{
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 34px;
+      color: #000000;
+    }
+    &--block{
+      margin-top: 4%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__cash{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 107px;
+        height: 100px;
+        background: #FAF9F9;
+        border: 1px solid #F86D3B;
+        box-sizing: border-box;
+        border-radius: 10px;
+        &--icon{
+          font-size: 66px;
+          color: #999999;
+        }
+        h1{
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 26px;
+          color: #999999;
+
+        }
+      }
+    }
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+    button{
+      width: 330px;
+      height: 65px;
+      background: #F86D3B;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 38px;
+      color: #FAF9F9;
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  #orders{
+    .pay{
+      &--block{
+        &__cash{
+          width: 93px;
+          height: 93px;
+          h1{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
