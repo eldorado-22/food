@@ -9,14 +9,13 @@ import Index from "./components";
 function App() {
     return (
         <>
-            {/*<Header/>*/}
             <Routes>
-                <Route path={"/my-order"} element={<MyOrder/>}/>
+                <Route path={"/order"} element={<MyOrder/>}/>
                 <Route path={"/message"} element={<Message/>}/>
                 <Route path={"/settings"} element={<Settings/>}/>
                 <Route path={"/"} element={<Index/>}/>
                 <Route path={"/detail-page"} element={<DetailPage/>}/>
-                <Route path={"/address"} element={<DetailPage/>}/>
+                <Route path={"/my-order"} element={<MyOrder/>}/>
             </Routes>
         </>
     );

@@ -14,8 +14,6 @@ const DetailBtn = () => {
         localStorage.setItem("food", JSON.stringify(task))
     }
 
-
-
     return (
         <div>
             <div className='detail--block__state' style={{display: "flex", alignItems: "center",}}>
