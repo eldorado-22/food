@@ -1,5 +1,4 @@
 import './App.scss';
-import Header from "./components/Header/header";
 import {Route, Routes} from "react-router-dom";
 import MyOrder from "./pages/My-Order/My-Order";
 import Message from "./pages/Message/message";
@@ -10,7 +9,6 @@ import Index from "./components";
 function App() {
     return (
         <>
-            <Header/>
             <Routes>
                 <Route path={"/order"} element={<MyOrder/>}/>
                 <Route path={"/message"} element={<Message/>}/>

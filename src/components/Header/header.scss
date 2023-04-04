@@ -150,6 +150,34 @@
       }
     }
 
+    &--address {
+      background: #E0DDDD;
+      padding: 20px 30px;
+      border-radius: 9px;
+      //margin: 10px 0;
+
+
+      &__block {
+        display: flex;
+        justify-content: start;
+        margin-right: 90px;
+
+        h3 {
+          font-weight: 600;
+          font-size: 25px;
+          padding-top: 5px;
+          color: #F86D3B;
+
+        }
+
+        &--icon {
+          font-size: 40px;
+          margin-right: 30px;
+          color: #F86D3B;
+        }
+      }
+    }
+
     &--settings {
       background: #E0DDDD;
       padding: 20px 30px;
@@ -298,7 +326,9 @@
 @media (max-width: 551px) {
   #header {
     .header {
-      padding: 20px 20px;
+    h1{
+      font-size: 30px;
+    }
     }
   }
 

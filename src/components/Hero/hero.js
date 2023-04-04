@@ -5,7 +5,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
-import img from "../../components/Hero/img/image 18.png"
+import img from "../../assets/img/image 18.png"
 import {BiDish} from "react-icons/bi"
 import {GiCakeSlice} from "react-icons/gi"
 import {GiFullPizza} from "react-icons/gi"
