@@ -1,8 +1,15 @@
 #national{
   .national{
+    h1{
+      padding: 10px 0;
+      font-weight: 500;
+      font-size: 24px;
+      color: black;
+    }
     &--img{
+      //width: 70%;
       display: flex;
-      justify-content: space-around;
     }
   }
 }
+

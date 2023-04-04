@@ -9,8 +9,8 @@ import {Link} from "react-router-dom";
 const BurgerMenu = ({burger, setBurger}) => {
     return (
         <div className="burger" style={{
-            left: !burger ? '-3000px' : '0',
-            backdropFilter: !burger ? 'blur(10px)' : '5000px'
+            left: !burger ? '-1500px' : '0',
+            backdropFilter: !burger ? 'blur(10px)' : '2000px'
         }}>
             <div className='menu'>
                 <div className='menu--group'>
@@ -46,6 +46,15 @@ const BurgerMenu = ({burger, setBurger}) => {
                         </div>
                     </div>
                 </Link>
+
+                {/*<Link to={'/address'}>*/}
+                {/*    <div className='menu--address' onClick={() => setBurger(!burger)}>*/}
+                {/*        <div className="menu--address__block">*/}
+                {/*            <MdMessage className='menu--address__block--icon'/>*/}
+                {/*            <h3>Address</h3>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</Link>*/}
 
                 <Link to={'/settings'}>
                     <div className='menu--settings' onClick={() => setBurger(!burger)}>
