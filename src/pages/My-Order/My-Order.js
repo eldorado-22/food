@@ -16,6 +16,8 @@ const MyOrder = () => {
         }
     }
 
+import DetailBtn from "../detail-page/DetailBtn";
+const MyOrder = () => {
     return (
         <section id='orders'>
             <div className='container'>
@@ -35,6 +37,13 @@ const MyOrder = () => {
                             <h1 className='mx-4'>{counter}x</h1>
                             <button onClick={() => setCounter(counter + 1)}>+</button>
                         </div>
+                    <h1 className='my-4'>my order</h1>
+                    <div className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
+                            <div className='orders--block__image flex items-center'>
+                                <img className='w-[57px] mx-3' src={sahar} alt=""/>
+                                <h1>manty</h1>
+                            </div>
+                          <DetailBtn/>
                     </div>
                 </div>
 
