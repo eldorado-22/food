@@ -3,7 +3,10 @@ import sahar from "../../assets/img/image 46.png"
 import {TbCash} from "react-icons/tb";
 import {BsCreditCardFill, BsTerminalFill} from "react-icons/bs";
 import DetailBtn from "../detail-page/DetailBtn";
+import {Link} from "react-router-dom";
 const MyOrder = () => {
+    const [terminal,setTerminal] = useState(false)
+    const [cash,setCash] = useState(false)
     return (
         <section id='orders'>
             <div className='container'>
@@ -23,19 +26,21 @@ const MyOrder = () => {
                     <div className='pay--block'>
                         <div className='pay--block__cash'>
                             <div className= 'pay--block__cash--icon'>
-                                <TbCash/>
+                                <TbCash onClick={() => setCash(!cash)} style={{color: terminal === cash ? '#F86D3B' :  ''}}/>
                             </div>
                             <h1>Cash pay</h1>
                         </div>
                         <div className='pay--block__cash'>
                             <div className= 'pay--block__cash--icon'>
-                                <BsCreditCardFill/>
+                                <Link to={"/detail-card"}>
+                                    <BsCreditCardFill/>
+                                </Link>
                             </div>
                             <h1>card</h1>
                         </div>
                         <div className='pay--block__cash'>
                             <div className= 'pay--block__cash--icon'>
-                                <BsTerminalFill/>
+                                <BsTerminalFill onClick={() => setTerminal(!terminal)} style={{color: terminal !== cash ? '#F86D3B' : ''}}/>
                             </div>
                             <h1>Terminal</h1>
                         </div>

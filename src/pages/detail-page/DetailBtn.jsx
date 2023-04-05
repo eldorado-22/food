@@ -18,10 +18,10 @@ const DetailBtn = () => {
 
     return (
         <div>
-            <div className='detail--block__state' style={{display: "flex", alignItems: "center",}}>
-                <span className='cursor-pointer mx-5'  onClick={() => decCash(setCounter(counter -1))}>-</span>
+            <div className='detail--block__state mx-3 flex justify-between items-center w-[100px]' >
+                <span className='cursor-pointer mx-1'  onClick={() => decCash(setCounter(counter -1))}>-</span>
                 <h1>{counter}x</h1>
-                <button onClick={() => getCash(setCounter(counter + 1))}>+</button>
+                <button className='mx-1' onClick={() => getCash(setCounter(counter + 1))}>+</button>
             </div>
         </div>
     );
