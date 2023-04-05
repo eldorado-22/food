@@ -1,21 +1,18 @@
-Hello!!! 🗽 <br/>
-.
-Our project name : FOOD🍔 <br/>
-. <br/>
-. <br/>
-Our team name "SAFARI" <br/>
-We work together 👩🏻‍💻👨🏻‍💻👨🏻‍💻👨🏻‍💻 <br/>
-. <br/>
-. <br/>
-The team consists of 4 people: 👇🏻 <br/>
-Yasmina: https://github.com/AzatbekovaDev 👩🏻‍💻 <br/> 
-Aidar: https://github.com/Aidar06  👨🏻‍💻 <br/>
-Muhhamed Ali : https://github.com/cerbent 👨🏻‍💻 <br/>
-Eldar: https://github.com/eldorado-22 👨🏻‍💻 <br/>
-. <br/>
-. <br/>
-Our Social Media: 👇🏻  <br/>
-Yasmina: https://www.instagram.com/azatbekovaaa/ 👩🏻‍💻 <br/> 
-Aidar: https://www.instagram.com/kabylbekov_aidar/ 👨🏻‍💻 <br/>
-Muhhamed Ali : https://www.instagram.com/cerbent/ 👨🏻‍💻 <br/>
-Eldar: https://www.instagram.com/zhumashevv_996/ 👨🏻‍💻 <br/>
+# Food 🍔 <br/>
+<br/> 
+
+<h2>Our team name "SAFARI" </2>
+<h3> We work together 👩🏻‍💻👨🏻‍💻👨🏻‍💻👨🏻‍💻 </h3> 
+<br/>
+<h1> The team consists of 4 people: 👇🏻 </h1>
+<h3> Yasmina: https://github.com/AzatbekovaDev 👩🏻‍💻 </h3>
+<h3> Aidar: https://github.com/Aidar06  👨🏻‍💻  </h3> 
+<h3> Muhhamed Ali : https://github.com/cerbent 👨🏻‍💻 </h3>
+<h3> Eldar: https://github.com/eldorado-22 👨🏻‍💻 </h3>
+<br/> 
+<h1> Our Social Media: 👇🏻  </h1> 
+
+<h3> Yasmina: https://www.instagram.com/azatbekovaaa/ 👩🏻‍💻 </h3> 
+<h3> Aidar: https://www.instagram.com/kabylbekov_aidar/ 👨🏻‍💻 </h3> 
+<h3> Muhhamed Ali : https://www.instagram.com/cerbent/ 👨🏻‍💻 </h3> 
+<h3> Eldar: https://www.instagram.com/zhumashevv_996/ 👨🏻‍💻 </h3> 
