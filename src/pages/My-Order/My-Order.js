@@ -6,8 +6,6 @@ import './My-Order.scss';
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
 import DetailBtn from "../detail-page/DetailBtn";
 import {Link} from "react-router-dom";
-
-
 const MyOrder = () => {
 
     const [counter, setCounter] = useState(1)
@@ -52,7 +50,6 @@ const MyOrder = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className='pay'>
                     <h1>Paymant Methods</h1>
                     <div className='pay--block'>
@@ -77,9 +74,8 @@ const MyOrder = () => {
                                     <BsCreditCardFill/>
                                 </Link>
                             </div>
-                            <h1>Card</h1>
+                            <h1>card</h1>
                         </div>
-                      
                     <div className='pay'>
                         <h1>Paymant Methods</h1>
                         <div className='pay--block'>
