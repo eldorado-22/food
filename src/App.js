@@ -5,6 +5,7 @@ import Message from "./pages/Message/message";
 import Settings from "./pages/Settings/settings";
 import DetailPage from "./pages/detail-page/DetailPage";
 import Index from "./components";
+import DetailCard from "./pages/My-Order/Detail-Card/detail-card";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path={"/"} element={<Index/>}/>
                 <Route path={"/detail-page"} element={<DetailPage/>}/>
                 <Route path={"/my-order"} element={<MyOrder/>}/>
+                <Route path={"/detail-card"} element={<DetailCard/>}/>
             </Routes>
         </>
     );
