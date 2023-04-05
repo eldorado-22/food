@@ -16,7 +16,6 @@ const Settings = () => {
                         <BurgerMenuTwo/>
                         <h1>Settings</h1>
                     </div>
-
                     <h2>Profile</h2>
 
                     <div className="settings--profile">
@@ -48,7 +47,7 @@ const Settings = () => {
                         <MdNotifications className="settings--notification__icon"/>
                         <h3>Notification</h3>
                     </div>
-
+                </div>
                 </div>
             </div>
         </div>);
