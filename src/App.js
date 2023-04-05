@@ -5,11 +5,11 @@ import Message from "./pages/Message/message";
 import Settings from "./pages/Settings/settings";
 import DetailPage from "./pages/detail-page/DetailPage";
 import Index from "./components";
+import DetailCard from "./pages/My-Order/Detail-Card/detail-card";
 
 function App() {
     return (
         <>
-            {/*<Header/>*/}
             <Routes>
                 <Route path={"/my-order"} element={<MyOrder/>}/>
                 <Route path={"/message"} element={<Message/>}/>
@@ -17,6 +17,7 @@ function App() {
                 <Route path={"/"} element={<Index/>}/>
                 <Route path={"/detail-page"} element={<DetailPage/>}/>
                 <Route path={"/address"} element={<DetailPage/>}/>
+                <Route path={"/detail-card"} element={<DetailCard/>}/>
             </Routes>
         </>
     );

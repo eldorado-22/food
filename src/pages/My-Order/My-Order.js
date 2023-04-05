@@ -4,6 +4,9 @@ import {TbCash} from "react-icons/tb";
 import {BsCreditCardFill, BsTerminalFill} from "react-icons/bs";
 import './My-Order.scss';
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
+import DetailBtn from "../detail-page/DetailBtn";
+import {Link} from "react-router-dom";
+
 
 const MyOrder = () => {
 
@@ -15,9 +18,6 @@ const MyOrder = () => {
             return false
         }
     }
-
-import DetailBtn from "../detail-page/DetailBtn";
-const MyOrder = () => {
     return (
         <section id='orders'>
             <div className='container'>
@@ -26,6 +26,10 @@ const MyOrder = () => {
                        <BurgerMenuTwo/>
                        <h1 className='flex justify-center text-xl'>Cart</h1>
                    </div>
+                    <div className="orders--B">
+                        <BurgerMenuTwo/>
+                        <h1 className='flex justify-center text-xl'>Cart</h1>
+                    </div>
                     <h1 className='my-4'>My order</h1>
                     <div className='orders--block flex justify-between h-[68px] border-solid:ring-fuchsia-500'>
                         <div className='orders--block__image flex items-center'>
@@ -37,13 +41,15 @@ const MyOrder = () => {
                             <h1 className='mx-4'>{counter}x</h1>
                             <button onClick={() => setCounter(counter + 1)}>+</button>
                         </div>
-                    <h1 className='my-4'>my order</h1>
-                    <div className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
+                        <h1 className='my-4'>my order</h1>
+                        <div
+                            className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
                             <div className='orders--block__image flex items-center'>
                                 <img className='w-[57px] mx-3' src={sahar} alt=""/>
                                 <h1>manty</h1>
                             </div>
-                          <DetailBtn/>
+                            <DetailBtn/>
+                        </div>
                     </div>
                 </div>
 
@@ -60,20 +66,48 @@ const MyOrder = () => {
                         <div className='pay--block__cashTwo'>
                             <div className='pay--block__cashTwo--icon'>
                                 <BsCreditCardFill/>
+                            <div className= 'pay--block__cash--icon'>
+                                <TbCash onClick={() => setCash(!cash)} style={{color: terminal === cash ? '#F86D3B' :  ''}}/>
+                            </div>
+                            <h1>Cash pay</h1>
+                        </div>
+                        <div className='pay--block__cash'>
+                            <div className= 'pay--block__cash--icon'>
+                                <Link to={"/detail-card"}>
+                                    <BsCreditCardFill/>
+                                </Link>
                             </div>
                             <h1>Card</h1>
                         </div>
-                        <div className='pay--block__cashThree'>
-                            <div className='pay--block__cashThree--icon'>
-                                <BsTerminalFill/>
+                      
+                    <div className='pay'>
+                        <h1>Paymant Methods</h1>
+                        <div className='pay--block'>
+                            <div className='pay--block__cash'>
+                                <div className='pay--block__cash--icon'>
+                                    <TbCash/>
+                                </div>
+                                <h1>Cash pay</h1>
                             </div>
-                            <h1>Terminal</h1>
+
+                            <div className='pay--block__cashTwo'>
+                                <div className='pay--block__cashTwo--icon'>
+                                    <BsCreditCardFill/>
+                                </div>
+                                <h1>Card</h1>
+                            </div>
+                            <div className='pay--block__cashThree'>
+                                <div className='pay--block__cashThree--icon'>
+                                    <BsTerminalFill/>
+                                </div>
+                                <h1>Terminal</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div className='btn'>
-                    <button>Play Now</button>
+                    <div className='btn'>
+                        <button>Play Now</button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import manty1 from "../../assets/img/image 46.png"
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
 import manty1 from "../../assets/img/Group 26.png"
+// import manty1 from "../../assets/img/Group 26.png"
 import DetailBtn from "./DetailBtn";
 
 
