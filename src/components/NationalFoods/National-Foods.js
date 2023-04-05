@@ -1,7 +1,7 @@
 import React from 'react';
 import './National-Foods.scss';
 import {NavLink} from "react-router-dom";
-import manty from "../../assets/img/image 46.png"
+import fiveB from "../../assets/img/besh-barmak.png"
 
 const NationalFoods = () => {
     return (
@@ -11,7 +11,7 @@ const NationalFoods = () => {
                     <h1 className='mx-1'>National Foods</h1>
                     <div className='national--img my-5'>
                         <NavLink to={"/detail-page"}>
-                            <img src={manty} alt=""/>
+                            <img src={fiveB} alt=""/>
                         </NavLink>
                     </div>
                 </div>

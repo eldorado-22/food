@@ -14,8 +14,6 @@ const DetailBtn = () => {
         localStorage.setItem("food", JSON.stringify(task))
     }
 
-
-
     return (
         <div>
             <div className='detail--block__state mx-3 flex justify-between items-center w-[100px]' >

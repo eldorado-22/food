@@ -1,0 +1,224 @@
+#settings {
+  .settings {
+    &--B {
+      display: flex;
+      padding: 10px 0;
+
+      h1 {
+        font-weight: 500;
+        font-size: 25px;
+        color: black;
+        padding: 0 10px;
+      }
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 20px;
+      color: black;
+      padding: 0 8px;
+    }
+
+    &--profile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 10px 0;
+      }
+
+      img {
+        padding: 10px 0;
+        width: 35%;
+      }
+    }
+
+    &--personal {
+      background: #FAF9F9;
+      border-radius: 9px;
+      width: 100%;
+      height: 70px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      margin: 20px 0;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 0 20px;
+      }
+
+      &__icon {
+        color: #F86D3B;
+        font-size: 2rem;
+      }
+    }
+
+    &--payment {
+      background: #FAF9F9;
+      border-radius: 9px;
+      width: 100%;
+      height: 70px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      margin: 20px 0;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 0 20px;
+      }
+
+      &__icon {
+        color: #999999;
+        font-size: 2rem;
+      }
+    }
+
+    &--login {
+      background: #FAF9F9;
+      border-radius: 9px;
+      width: 100%;
+      height: 70px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      margin: 20px 0;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 0 20px;
+      }
+
+      &__icon {
+        color: #999999;
+        font-size: 2rem;
+      }
+    }
+
+    &--friend {
+      background: #FAF9F9;
+      border-radius: 9px;
+      width: 100%;
+      height: 70px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      margin: 20px 0;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 0 20px;
+      }
+
+      &__icon {
+        color: #999999;
+        font-size: 2rem;
+      }
+    }
+
+    &--notification {
+      background: #FAF9F9;
+      border-radius: 9px;
+      width: 100%;
+      height: 70px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      margin: 20px 0;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 0 20px;
+      }
+
+      &__icon {
+        color: #999999;
+        font-size: 2rem;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 376px) {
+  #settings {
+    .settings {
+      &--B {
+        h1 {
+          font-size: 22px;
+          padding: 5px 6px;
+        }
+      }
+
+      &--personal {
+        h3 {
+          font-size: 22px;
+        }
+
+        &__icon {
+          font-size: 33px;
+        }
+      }
+
+      &--payment {
+        h3 {
+          font-size: 22px;
+        }
+
+        &__icon {
+          font-size: 33px;
+        }
+      }
+
+      &--login {
+        h3 {
+          font-size: 22px;
+        }
+
+        &__icon {
+          font-size: 33px;
+        }
+      }
+
+      &--friend {
+        h3 {
+          font-size: 22px;
+        }
+
+        &__icon {
+          font-size: 33px;
+        }
+      }
+
+      &--notification {
+        h3 {
+          font-size: 22px;
+        }
+
+        &__icon {
+          font-size: 33px;
+        }
+      }
+    }
+  }
+}
