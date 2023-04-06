@@ -50,6 +50,7 @@ const MyOrder = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className='pay'>
                     <h1>Paymant Methods</h1>
                     <div className='pay--block'>
@@ -77,7 +78,7 @@ const MyOrder = () => {
                             <h1>card</h1>
                         </div>
                     <div className='pay'>
-                        <h1>Paymant Methods</h1>
+                        <h1>Payment Methods</h1>
                         <div className='pay--block'>
                             <div className='pay--block__cash'>
                                 <div className='pay--block__cash--icon'>
@@ -105,6 +106,7 @@ const MyOrder = () => {
                         <button>Play Now</button>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );
