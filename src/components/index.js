@@ -1,9 +1,10 @@
 import React from 'react';
-import {Route} from "react-router-dom";
 import NationalFoods from "./NationalFoods/National-Foods";
 import Hero from "./Hero/hero";
 import MenuCategories from "./Menu-Categories/Menu-Categories";
 import Header from "./Header/header";
+import Desserts from "../pages/Desserts/Desserts";
+import Pizza from "../pages/Pizza/Pizza";
 
 const Index = () => {
     return (
@@ -12,6 +13,8 @@ const Index = () => {
             <Hero/>
             <MenuCategories/>
             <NationalFoods/>
+            <Desserts/>
+            <Pizza/>
         </div>
     );
 };

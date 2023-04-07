@@ -11,6 +11,7 @@ import {GiCakeSlice} from "react-icons/gi"
 import {GiFullPizza} from "react-icons/gi"
 import {BsCupStraw} from "react-icons/bs"
 import {BsCupHotFill} from "react-icons/bs"
+import {dishes} from "../FakeBackend/FakeBackend";
 
 const Hero = () => {
     return (
