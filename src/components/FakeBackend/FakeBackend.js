@@ -3,8 +3,6 @@
 
 
 //// NATIONAL FOODS //////
-
-
 export const beshbarmak = [
     {
         id: 1,
@@ -23,7 +21,6 @@ export const many = [
         imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120424122748/211227223840/p_O.jpg',
     },
 ];
-
 
 export const kuurdak = [
     {
@@ -53,7 +50,7 @@ export const biscuit = [
         id: 5,
         name: 'Chokolate biscuit',
         price: "150|190 som",
-        imageUrl: 'http://www.moonacoffee.com/wp-content/uploads/2015/02/slider_1.png',
+        imageUrl: 'https://www.moonacoffee.com/wp-content/uploads/2015/02/slider_1.png',
     },
 ];
 
@@ -99,6 +96,37 @@ export const italian = [
 
 //// PIZZA FOOD //////
 
+
+//// COLD DRINK /////
+export const pepsi = [
+    {
+        id: 10,
+        name: 'Pepsi',
+        price: "100|130 som",
+        imageUrl: 'https://www.pepsimax.se/prod/s3fs-public/2022-12/Pepsi%20Reg%2033cl%20Sleek%20Can%20LoRes%20Web.png',
+    },
+];
+
+export const cola = [
+    {
+        id: 11,
+        name: 'Coca Cola',
+        price: "100|130 som",
+        imageUrl: 'https://www.naughtygrapett.com/wp-content/uploads/2021/09/Coca_colo_can_8oz_12391046-min.png',
+    },
+];
+
+export const fanta = [
+    {
+        id: 12,
+        name: 'Fanta',
+        price: "110|140 som",
+        imageUrl: 'https://api.e-dostavka.by/UserFiles/images/catalog/Goods/2105/00012105/norm/00012105.n_1.png',
+    },
+];
+
+
+//// COLD DRINK /////
 
 
 
