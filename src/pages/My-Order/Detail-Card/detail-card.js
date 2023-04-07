@@ -1,10 +1,14 @@
 import React from 'react';
 import './detail-card.scss';
+import BurgerMenuTwo from "../../../components/Burger-Menu-Two/Burger-Menu-Two";
 
 const DetailCard = () => {
     return (
         <div id='card'>
             <div className='container'>
+                <div className="card--B" style={{display: "flex", }}>
+                    <BurgerMenuTwo/>
+                </div>
                 <h1>Add Debit Card</h1>
                 <div className='card'>
                     <div className='card--name'>
