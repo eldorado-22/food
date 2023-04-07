@@ -5,6 +5,7 @@ import {BsCreditCardFill, BsTerminalFill} from "react-icons/bs";
 import DetailBtn from "../detail-page/DetailBtn";
 import {Link} from "react-router-dom";
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
+import {beshbarmak} from "../../components/FakeBackend/FakeBackend";
 const MyOrder = () => {
     const [terminal,setTerminal] = useState(false)
     const [cash,setCash] = useState(false)
@@ -20,13 +21,17 @@ const MyOrder = () => {
 
                     <h2 className='my-4'>My order</h2>
 
-                    <div className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
-                        <div className='orders--block__image flex items-center'>
-                            <img className='w-[57px] mx-3' src={sahar} alt=""/>
-                            <h1>manti</h1>
-                        </div>
-                        <DetailBtn/>
-                    </div>
+                    {
+                        beshbarmak.map(el => (
+                            <div className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
+                                <div className='orders--block__image flex items-center'>
+                                    <img className='w-[57px] mx-3' src={el.imageUrl} alt=""/>
+                                    <p>{el.name}</p>
+                                </div>
+                                <DetailBtn/>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className='pay'>
                     <h1>Paymant Methods</h1>
