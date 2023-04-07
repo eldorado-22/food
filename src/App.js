@@ -11,7 +11,7 @@ function App() {
     return (
         <>
             <Routes>
-                <Route path={"/my-order"} element={<MyOrder/>}/>
+                <Route path={"/order"} element={<MyOrder/>}/>
                 <Route path={"/message"} element={<Message/>}/>
                 <Route path={"/settings"} element={<Settings/>}/>
                 <Route path={"/"} element={<Index/>}/>

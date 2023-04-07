@@ -1,26 +1,31 @@
-#card{
-  h1{
-    text-align: center;
-    margin: 10px 0;
+#card {
+  h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     color: #000000;
+    padding: 14px 0;
   }
-  .card{
+
+  .card {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    &--name{
-      h2{
-        margin: 10px 0;
+
+    &--B {
+      margin: 5px 0;
+    }
+
+    &--name {
+      h2 {
         font-weight: 500;
         font-size: 15px;
         line-height: 22px;
         color: #494949;
       }
-      input{
+
+      input {
         margin: 20px 0;
         padding: 0 10px;
         color: #827B7B;
@@ -29,18 +34,22 @@
         background: #FAF9F9;
       }
     }
-    &--number{
+
+    &--number {
       display: flex;
       align-items: center;
-      &__date{
+
+      &__date {
         margin: 0 12px;
-        h2{
+
+        h2 {
           font-weight: 500;
           font-size: 15px;
           line-height: 22px;
           color: #494949;
         }
-        input{
+
+        input {
           margin: 25px 0;
           width: 165px;
           height: 45px;
@@ -49,15 +58,18 @@
           background: #FAF9F9;
         }
       }
-      &__cvv{
+
+      &__cvv {
         margin: 0 10px;
-        h2{
+
+        h2 {
           font-weight: 500;
           font-size: 15px;
           line-height: 22px;
           color: #494949;
         }
-        input{
+
+        input {
           width: 165px;
           height: 45px;
           color: #827B7B;
@@ -66,17 +78,20 @@
         }
       }
     }
-    &--delivery{
+
+    &--delivery {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      h1{
+
+      h1 {
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
         color: #000000;
       }
-      input{
+
+      input {
         color: #827B7B;
         width: 355px;
         height: 50px;
@@ -84,9 +99,11 @@
         background: #FAF9F9;
       }
     }
-    &--btn{
+
+    &--btn {
       margin-top: 10%;
-      button{
+
+      button {
         width: 355px;
         height: 55px;
         color: #ECE7E7;
@@ -97,32 +114,35 @@
 }
 
 
-
 @media (max-width: 320px) {
-  #card{
-    .card{
-      &--name{
-        input{
+  #card {
+    .card {
+      &--name {
+        input {
           width: 275px;
         }
       }
-      &--number{
-        &__cvv{
-          input{
+
+      &--number {
+        &__cvv {
+          input {
             width: 100px;
           }
         }
-        &__date{
+
+        &__date {
           width: 157px;
         }
       }
-      &--delivery{
-        input{
+
+      &--delivery {
+        input {
           width: 279px;
         }
       }
-      &--btn{
-        button{
+
+      &--btn {
+        button {
           width: 279px;
         }
       }
