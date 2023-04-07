@@ -11,7 +11,8 @@ import {GiCakeSlice} from "react-icons/gi"
 import {GiFullPizza} from "react-icons/gi"
 import {BsCupStraw} from "react-icons/bs"
 import {BsCupHotFill} from "react-icons/bs"
-import {dishes} from "../FakeBackend/FakeBackend";
+import NationalFoods from "../NationalFoods/National-Foods";
+import Desserts from "../../pages/Desserts/Desserts";
 
 const Hero = () => {
     return (
@@ -64,17 +65,21 @@ const Hero = () => {
                             },
                         }}
                         modules={[Pagination]}
-                        className="slider--mySwiper"
-                    >
-                        <SwiperSlide className="slider--mySwiper__cardFood">
-                            <BiDish className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">National foods</h3>
-                        </SwiperSlide>
+                        className="slider--mySwiper">
 
-                        <SwiperSlide className="slider--mySwiper__card">
-                            <GiCakeSlice className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">Desserts</h3>
-                        </SwiperSlide>
+                        <a href={NationalFoods}>
+                            <SwiperSlide className="slider--mySwiper__cardFood">
+                                <BiDish className="icon"/>
+                                <h3 className="slider--mySwiper__card--title">National foods</h3>
+                            </SwiperSlide>
+                        </a>
+
+                        <a href={Desserts}>
+                            <SwiperSlide className="slider--mySwiper__card">
+                                <GiCakeSlice className="icon"/>
+                                <h3 className="slider--mySwiper__card--title">Desserts</h3>
+                            </SwiperSlide>
+                        </a>
 
                         <SwiperSlide className="slider--mySwiper__card">
                             <GiFullPizza className="icon"/>
