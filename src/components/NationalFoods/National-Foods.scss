@@ -1,5 +1,6 @@
 #national {
   padding: 15px 0;
+
   .national {
     h1 {
       padding: 10px 0;
@@ -10,6 +11,7 @@
 
     &--group {
       display: flex;
+      flex-wrap: wrap;
 
 
       &__fiveB {
@@ -18,19 +20,22 @@
         width: 30%;
         height: 250px;
         margin: 0 20px;
+
         p {
           font-weight: 500;
           font-size: 20px;
           color: #F86D3B;
           text-align: center;
         }
-        span{
+
+        span {
           font-weight: 500;
           font-size: 18px;
           color: #F86D3B;
           padding: 0 20%;
 
         }
+
         img {
           width: 150%;
           padding: 20px 10%;
@@ -51,13 +56,15 @@
           color: #F86D3B;
           text-align: center;
         }
-        span{
+
+        span {
           font-weight: 500;
           font-size: 18px;
           color: #F86D3B;
           padding: 0 20%;
 
         }
+
         img {
           width: 150%;
           padding: 20px 10%;
@@ -70,20 +77,110 @@
         border-radius: 14px;
         width: 30%;
         height: 250px;
-        margin: 0 20px;
+        margin: 20px 20px;
+
         p {
           font-weight: 500;
           font-size: 20px;
           color: #F86D3B;
           text-align: center;
         }
-        span{
+
+        span {
           font-weight: 500;
           font-size: 18px;
           color: #F86D3B;
           padding: 0 20%;
 
         }
+
+        img {
+          width: 150%;
+          padding: 20px 10%;
+        }
+
+      }
+
+      &__olobo {
+        border: 2px solid #F86D3B;
+        border-radius: 14px;
+        width: 30%;
+        height: 250px;
+        margin: 20px 20px;
+
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          color: #F86D3B;
+          text-align: center;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #F86D3B;
+          padding: 0 20%;
+
+        }
+
+        img {
+          width: 90%;
+          padding: 7px 10%;
+        }
+
+      }
+
+      &__soup {
+        border: 2px solid #F86D3B;
+        border-radius: 14px;
+        width: 30%;
+        height: 250px;
+        margin: 0 20px;
+
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          color: #F86D3B;
+          text-align: center;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #F86D3B;
+          padding: 0 20%;
+
+        }
+
+        img {
+          width: 90%;
+          padding: 0 10%;
+        }
+
+      }
+
+      &__lagman {
+        border: 2px solid #F86D3B;
+        border-radius: 14px;
+        width: 30%;
+        height: 250px;
+        margin: 0 20px;
+
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          color: #F86D3B;
+          text-align: center;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #F86D3B;
+          padding: 0 20%;
+
+        }
+
         img {
           width: 150%;
           padding: 20px 10%;
