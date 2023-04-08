@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
 import './settings.scss';
 import user from './../../assets/img/users.png'
@@ -7,8 +7,26 @@ import {BsCashCoin} from "react-icons/bs";
 import {TbLock} from "react-icons/tb";
 import {FaUserFriends} from "react-icons/fa";
 import {MdNotifications} from "react-icons/md";
+import {BiLogOut} from "react-icons/bi";
+import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
 
 const Settings = () => {
+    const navigate = useNavigate()
+
+    const dispatch = useDispatch()
+    const logOut = () => {
+        dispatch({type: 'LOG_OUT'})
+    }
+    const {account} = useSelector(state => state)
+
+    let name = ''
+
+    account.map(el => {
+        if (el.inAcc){
+            name = el.name
+        }
+    })
     return (<div id="settings">
             <div className="container">
                 <div className="settings">
@@ -20,8 +38,10 @@ const Settings = () => {
                     <h2>Profile</h2>
 
                     <div className="settings--profile">
-                        <img src={user} alt="img"/>
-                        <h1>Adem Khan</h1>
+                        <div>
+                            <p>{name[0].toUpperCase()}</p>
+                        </div>
+                        <h1>{name}</h1>
                     </div>
 
                     <div className="settings--personal">
@@ -34,7 +54,7 @@ const Settings = () => {
                         <h3>Payment Method</h3>
                     </div>
 
-                    <div className="settings--login">
+                    <div onClick={()=> {logOut(); navigate('/signIn')}} className="settings--login">
                         <TbLock className="settings--login__icon"/>
                         <h3>Login & Password</h3>
                     </div>
@@ -47,6 +67,11 @@ const Settings = () => {
                     <div className="settings--notification">
                         <MdNotifications className="settings--notification__icon"/>
                         <h3>Notification</h3>
+                    </div>
+
+                    <div onClick={()=> {logOut(); navigate('/')}} className="settings--logOut">
+                        <BiLogOut className="settings--notification__icon"/>
+                        <h3>Log Out</h3>
                     </div>
 
                 </div>

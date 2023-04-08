@@ -8,8 +8,18 @@
       font-size: 40px;
     }
 
-    img {
-      width: 16%;
+    &--user{
+      width: 55px;
+      height: 55px;
+      background: #ff6a00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      p{
+        color: white;
+        font-size: 24px;
+      }
     }
   }
 }
