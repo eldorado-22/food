@@ -35,3 +35,77 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    #print{
+        .print{
+            margin: 40px 10px;
+            &--block{
+                h2{
+                    font-size: 27px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    #print{
+        .print{
+            margin: 30px 10px;
+            &--block{
+                h2{
+                    font-size: 25px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    #print{
+        .print{
+            margin: 30px 10px;
+            &--block{
+                h2{
+                    font-size: 20px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 250px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    #print{
+        .print{
+            margin: 30px 10px;
+            &--block{
+                h2{
+                    font-size: 20px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 250px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
