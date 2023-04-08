@@ -1,7 +1,6 @@
 // Список блюд
 
 
-
 //// NATIONAL FOODS //////
 export const beshbarmak = [
     {
@@ -33,8 +32,6 @@ export const kuurdak = [
 //// NATIONAL FOODS //////
 
 
-
-
 /// DESERTS ////
 export const strawberry = [
     {
@@ -63,8 +60,6 @@ export const ice = [
     },
 ];
 /// DESERTS ////
-
-
 
 
 //// PIZZA FOOD //////
@@ -124,9 +119,61 @@ export const fanta = [
         imageUrl: 'https://api.e-dostavka.by/UserFiles/images/catalog/Goods/2105/00012105/norm/00012105.n_1.png',
     },
 ];
-
-
 //// COLD DRINK /////
+
+
+//// HOT DRINK /////
+export const tea = [
+    {
+        id: 13,
+        name: 'Tea',
+        price: "20|25 som",
+        imageUrl: 'https://pngimg.com/d/tea_PNG16927.png',
+    },
+];
+export const teaMilk = [
+    {
+        id: 14,
+        name: 'Tea Milk',
+        price: "25|30 som",
+        imageUrl: 'https://www.wushiland-usa.com/product/image/pics/%E7%A2%B3%E5%9F%B9%E7%83%8F%E9%BE%8D%E5%A5%B6%E8%8C%B6.png',
+    },
+];
+export const cappuccino = [
+    {
+        id: 15,
+        name: 'Cappuccino',
+        price: "110|160 som",
+        imageUrl: 'https://media.istockphoto.com/id/942186500/vector/coffee-art-vector-cup-top-view-hot-cappuccino-coffee-white-mug-realistic-illustration.jpg?s=612x612&w=0&k=20&c=osx9Liukb8beGyytMiPZM_MJ-wgOU2tSfymmZWT6nVA=',
+    },
+];
+export const americano = [
+    {
+        id: 16,
+        name: 'Americano',
+        price: "100|120 som",
+        imageUrl: 'https://franko.su/upload/iblock/103/tw30tu5v1g6fooxafoq14i1w3802i3l9.png',
+    },
+];
+export const mocco = [
+    {
+        id: 17,
+        name: 'Mocco',
+        price: "190|220 som",
+        imageUrl: 'https://www.starbucksathome.com/kz/sites/default/files/styles/rdp_banner_image/public/2021-06/10032021_CafeMocha_CS-min.png?itok=6Y-TdzYT',
+    },
+];
+export const latte = [
+    {
+        id: 18,
+        name: 'Latte',
+        price: "100|190 som",
+        imageUrl: 'https://cdn.shopify.com/s/files/1/0319/0764/3436/products/vanilla-caffe-latte.png?v=1597269391',
+    },
+];
+//// HOT DRINK /////
+
+
 
 
 
