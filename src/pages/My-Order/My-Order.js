@@ -5,6 +5,7 @@ import {BsCreditCardFill, BsTerminalFill} from "react-icons/bs";
 import DetailBtn from "../detail-page/DetailBtn";
 import {Link} from "react-router-dom";
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
+import {AiFillCheckCircle} from "react-icons/ai";
 import {beshbarmak} from "../../components/FakeBackend/FakeBackend";
 const MyOrder = () => {
     const [terminal,setTerminal] = useState(false)
@@ -59,7 +60,9 @@ const MyOrder = () => {
                     </div>
                 </div>
                 <div className='btn'>
-                    <button>Play Now</button>
+                    <Link to={"/print-order"}>
+                        <button>Play Now</button>
+                    </Link>
                 </div>
             </div>
         </section>

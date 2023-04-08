@@ -6,10 +6,10 @@ import Settings from "./pages/Settings/settings";
 import DetailPage from "./pages/detail-page/DetailPage";
 import Index from "./components";
 import DetailCard from "./pages/My-Order/Detail-Card/detail-card";
-import DetailDesert from "./pages/Desserts/Detail-desert";
 import DetailPizza from "./pages/Pizza/Detail-Pizza/Detail-Pizza";
+import DetailDesert from "./pages/Desserts/Detail-desert";
 import DetailCold from "./pages/Cold-Drink/Detail-Cold/Detail-Cold";
-
+import Print from "./pages/My-Order/print-page/Print";
 function App() {
     return (
         <>
@@ -25,6 +25,7 @@ function App() {
                 <Route path={"/detail-desert"} element={<DetailDesert/>}/>
                 <Route path={"/detail-pizza"} element={<DetailPizza/>}/>
                 <Route path={"/cold-drink"} element={<DetailCold/>}/>
+                <Route path={"/print-order"} element={<Print/>}/>
             </Routes>
         </>
     );
