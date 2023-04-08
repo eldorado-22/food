@@ -1,0 +1,184 @@
+#cuisine {
+  padding: 15px 0;
+
+  h1 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+  }
+
+
+  .cuisine {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--baklava {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 140%;
+        padding: 10px 20%;
+      }
+    }
+
+    &--shawarma {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 10px 10%;
+      }
+    }
+
+    &--shashlik {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 92%;
+        padding: 5px 20%;
+      }
+    }
+
+    &--kofta {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 140%;
+        padding: 6px 0;
+      }
+    }
+
+    &--hummus {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 10px 10%;
+      }
+    }
+
+    &--kanafeh {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 10px 10%;
+      }
+    }
+  }
+}

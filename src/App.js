@@ -15,6 +15,11 @@ import {useState} from "react";
 import NewPassword from "./Signs/NewPassword/newPassword";
 import SuccReg from "./Signs/SuccReg/succReg";
 
+import DetailCard from "./pages/My-Order/Detail-Card/detail-card";
+import DetailPizza from "./pages/Pizza/Detail-Pizza/Detail-Pizza";
+import DetailDesert from "./pages/Desserts/Detail-desert";
+import DetailCold from "./pages/Cold-Drink/Detail-Cold/Detail-Cold";
+import Print from "./pages/My-Order/print-page/Print";
 function App() {
     const [codeMassage,setCodeMassage] = useState(false)
     const [codeVal,setCodeVal] = useState('')
@@ -41,6 +46,12 @@ function App() {
                 <Route path={"/forgetCode/:code"} element={<ForgetCode setCodeMassage={setCodeMassage}/>}/>
                 <Route path={"/newPassword"} element={<NewPassword forgetGmail={forgetGmail}/>}/>
                 <Route path={"/succReg"} element={<SuccReg/>}/>
+                <Route path={"/address"} element={<DetailPage/>}/>
+                <Route path={"/detail-card"} element={<DetailCard/>}/>
+                <Route path={"/detail-desert"} element={<DetailDesert/>}/>
+                <Route path={"/detail-pizza"} element={<DetailPizza/>}/>
+                <Route path={"/cold-drink"} element={<DetailCold/>}/>
+                <Route path={"/print-order"} element={<Print/>}/>
             </Routes>
         </>
     );

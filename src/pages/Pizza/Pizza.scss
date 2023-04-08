@@ -1,0 +1,183 @@
+#pizza {
+  padding: 15px 0;
+
+  h1 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+  }
+
+  .pizza {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--margarito {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--pepperoni {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 20%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--italian {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--monopoly {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 130%;
+        padding: 15px 20%;
+      }
+    }
+
+    &--homemade {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--hawaiana {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 95%;
+        padding: 20px 36px;
+      }
+    }
+  }
+}
