@@ -7,6 +7,7 @@ import Desserts from "../pages/Desserts/Desserts";
 import Pizza from "../pages/Pizza/Pizza";
 import ColdDrink from "../pages/Cold-Drink/Cold-drink";
 import HotDrink from "../pages/Hot-drink/Hot-drink";
+import EasternCuisine from "../pages/Eastern-Cuisine/Eastern-Cuisine";
 
 const Index = () => {
     return (
@@ -19,6 +20,7 @@ const Index = () => {
             <Pizza/>
             <ColdDrink/>
             <HotDrink/>
+            <EasternCuisine/>
         </div>
     );
 };

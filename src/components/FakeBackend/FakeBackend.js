@@ -155,10 +155,10 @@ export const americano = [
         imageUrl: 'https://franko.su/upload/iblock/103/tw30tu5v1g6fooxafoq14i1w3802i3l9.png',
     },
 ];
-export const mocco = [
+export const mocha = [
     {
         id: 17,
-        name: 'Mocco',
+        name: 'Mocha',
         price: "190|220 som",
         imageUrl: 'https://www.starbucksathome.com/kz/sites/default/files/styles/rdp_banner_image/public/2021-06/10032021_CafeMocha_CS-min.png?itok=6Y-TdzYT',
     },
@@ -172,6 +172,58 @@ export const latte = [
     },
 ];
 //// HOT DRINK /////
+
+
+//// EASTERN CUISINE //////
+export const baklava = [
+    {
+        id: 19,
+        name: 'Baklava',
+        price: "90|125 som",
+        imageUrl: 'https://play-lh.googleusercontent.com/FD-_DXtKoh-ROND3H1BzF5lpRWw7r4JAuAsJc7Rq-l11mz4wn83kr-ZZ2h48mvHW-DM',
+    },
+];
+export const shawarma = [
+    {
+        id: 20,
+        name: 'Shawarma',
+        price: "130|200 som",
+        imageUrl: 'https://www.shawarmabarlow.com/assets/images/Beef-Donair-1000.png',
+    },
+];
+export const shashlik = [
+    {
+        id: 21,
+        name: 'Shashlik',
+        price: "300|450 som",
+        imageUrl: 'https://indelika.com/wp-content/uploads/2020/10/recipe-4.png',
+    },
+];
+export const kofta = [
+    {
+        id: 22,
+        name: 'Kofta',
+        price: "200|270 som",
+        imageUrl: 'https://static.wixstatic.com/media/d32071_44fa4578b54449f6a285289d9a8a6811~mv2.png/v1/fill/w_611,h_408,al_c/d32071_44fa4578b54449f6a285289d9a8a6811~mv2.png',
+    },
+];
+export const hummus = [
+    {
+        id: 23,
+        name: 'Hummus',
+        price: "215|280 som",
+        imageUrl: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/19/0/FNM_010114-Homemade-Hummus-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1389218464364.jpeg',
+    },
+];
+export const kanafeh = [
+    {
+        id: 23,
+        name: 'Kanafeh',
+        price: "220|260 som",
+        imageUrl: 'https://knafehhouse.com/wp-content/uploads/2020/07/Knafeh-FG1.png',
+    },
+];
+
 
 
 

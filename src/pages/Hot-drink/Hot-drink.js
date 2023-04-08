@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hot-drink.scss';
 import {
-    americano, biscuit, cappuccino, ice, latte, mocco, strawberry, tea, teaMilk
+    americano, cappuccino, latte, mocha, tea, teaMilk
 } from "../../components/FakeBackend/FakeBackend";
 import {NavLink} from "react-router-dom";
 
@@ -48,7 +48,7 @@ const HotDrink = () => {
                     </div>
                 })}
                 {
-                    mocco.map(el => {
+                    mocha.map(el => {
                         return <div className="hotDrink--mocco">
                             <NavLink to={"/detail-desert"}>
                                 <img src={el.imageUrl} alt="img"/>
