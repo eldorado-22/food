@@ -7,6 +7,27 @@ import {BsCashCoin, BsInstagram, BsWhatsapp} from "react-icons/bs";
 import {TbLock} from "react-icons/tb";
 import {FaUserFriends} from "react-icons/fa";
 import {MdNotifications} from "react-icons/md";
+import {BiLogOut} from "react-icons/bi";
+import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
+
+const Settings = () => {
+    const navigate = useNavigate()
+
+    const dispatch = useDispatch()
+    const logOut = () => {
+        dispatch({type: 'LOG_OUT'})
+    }
+    const {account} = useSelector(state => state)
+
+    let name = ''
+
+    account.map(el => {
+        if (el.inAcc){
+            name = el.name
+        }
+    })
+    return (<div id="settings">
 import {elKart, mbank, visa} from "../../components/FakeBackend/FakeBackend";
 import {AiFillFacebook} from "react-icons/ai";
 
@@ -28,8 +49,10 @@ const Settings = () => {
                     <h2>Profile</h2>
 
                     <div className="settings--profile">
-                        <img src={user} alt="img"/>
-                        <h1>Adem Khan</h1>
+                        <div>
+                            <p>{name[0].toUpperCase()}</p>
+                        </div>
+                        <h1>{name}</h1>
                     </div>
 
                     <div style={{
@@ -48,6 +71,7 @@ const Settings = () => {
                         <h3>Payment Method</h3>
                     </div>
 
+                    <div onClick={()=> {logOut(); navigate('/signIn')}} className="settings--login">
                     <div style={{
                         display: payment === true ? "block" : "none",
                     }} className="settings--share">
@@ -147,6 +171,12 @@ const Settings = () => {
                         <MdNotifications className="settings--notification__icon"/>
                         <h3>Notification</h3>
                     </div>
+
+                    <div onClick={()=> {logOut(); navigate('/')}} className="settings--logOut">
+                        <BiLogOut className="settings--notification__icon"/>
+                        <h3>Log Out</h3>
+                    </div>
+
                 </div>
             </div>
         </div>);
