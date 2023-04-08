@@ -67,14 +67,14 @@ const Hero = () => {
                         modules={[Pagination]}
                         className="slider--mySwiper">
 
-                        <a href={NationalFoods}>
-                            <SwiperSlide className="slider--mySwiper__cardFood">
+                        <SwiperSlide className="slider--mySwiper__cardFood">
+                            <a href="#national">
                                 <BiDish className="icon"/>
                                 <h3 className="slider--mySwiper__card--title">National foods</h3>
-                            </SwiperSlide>
-                        </a>
+                            </a>
+                        </SwiperSlide>
 
-                        <a href={Desserts}>
+                        <a href="#desserts">
                             <SwiperSlide className="slider--mySwiper__card">
                                 <GiCakeSlice className="icon"/>
                                 <h3 className="slider--mySwiper__card--title">Desserts</h3>
