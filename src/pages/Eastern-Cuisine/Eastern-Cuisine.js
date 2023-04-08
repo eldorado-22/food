@@ -7,10 +7,9 @@ const EasternCuisine = () => {
     return (
         <section id="cuisine">
             <div className="container">
-                <h1 className="mx-1">Easturn Cuisine</h1>
+                <h1 className="mx-1">Eastern cuisine</h1>
                 <div className="cuisine">
-                    {
-                        baklava.map(el => {
+                    {baklava.map(el => {
                             return <div className="cuisine--baklava">
                                 <NavLink to={"/detail-desert"}>
                                     <img src={el.imageUrl} alt="img"/>
@@ -18,10 +17,8 @@ const EasternCuisine = () => {
                                     <span>{el.price}</span>
                                 </NavLink>
                             </div>
-                        })
-                    }
-                    {
-                        shawarma.map(el => {
+                        })}
+                    {shawarma.map(el => {
                             return <div className="cuisine--shawarma">
                                 <NavLink to={"/detail-desert"}>
 
@@ -30,10 +27,8 @@ const EasternCuisine = () => {
                                     <span>{el.price}</span>
                                 </NavLink>
                             </div>
-                        })
-                    }
-                    {
-                        shashlik.map(el => {
+                        })}
+                    {shashlik.map(el => {
                             return <div className="cuisine--shashlik">
                                 <NavLink to={"/detail-desert"}>
                                     <img src={el.imageUrl} alt="img"/>
@@ -41,10 +36,8 @@ const EasternCuisine = () => {
                                     <span>{el.price}</span>
                                 </NavLink>
                             </div>
-                        })
-                    }
-                    {
-                        kofta.map(el => {
+                        })}
+                    {kofta.map(el => {
                             return <div className="cuisine--kofta">
                                 <NavLink to={"/detail-desert"}>
                                     <img src={el.imageUrl} alt="img"/>
@@ -52,10 +45,8 @@ const EasternCuisine = () => {
                                     <span>{el.price}</span>
                                 </NavLink>
                             </div>
-                        })
-                    }
-                    {
-                        hummus.map(el => {
+                        })}
+                    {hummus.map(el => {
                             return <div className="cuisine--hummus">
                                 <NavLink to={"/detail-desert"}>
                                     <img src={el.imageUrl} alt="img"/>
@@ -63,10 +54,8 @@ const EasternCuisine = () => {
                                     <span>{el.price}</span>
                                 </NavLink>
                             </div>
-                        })
-                    }
-                    {
-                        kanafeh.map(el => {
+                        })}
+                    {kanafeh.map(el => {
                             return <div className="cuisine--kanafeh">
                                 <NavLink to={"/detail-desert"}>
                                     <img src={el.imageUrl} alt="img"/>
@@ -74,8 +63,7 @@ const EasternCuisine = () => {
                                     <span>{el.price}</span>
                                 </NavLink>
                             </div>
-                        })
-                    }
+                        })}
 
                 </div>
             </div>

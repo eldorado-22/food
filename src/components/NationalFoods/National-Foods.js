@@ -1,7 +1,7 @@
 import React from 'react';
 import './National-Foods.scss';
 import {Link} from "react-router-dom";
-import {beshbarmak, kuurdak, many} from "../FakeBackend/FakeBackend";
+import {beshbarmak, kuurdak, lagman, olobo,many, soup} from "../FakeBackend/FakeBackend";
 
 const NationalFoods = () => {
         return (
@@ -37,9 +37,42 @@ const NationalFoods = () => {
                                 kuurdak.map(el => {
                                     return <div className="national--group__kuurdak">
                                         <Link to={"/detail-page"}>
-                                        <img src={el.imageUrl} alt="img"/>
-                                        <p>{el.name}</p>
-                                        <span>{el.price}</span>
+                                            <img src={el.imageUrl} alt="img"/>
+                                            <p>{el.name}</p>
+                                            <span>{el.price}</span>
+                                        </Link>
+                                    </div>
+                                })
+                            }
+                            {
+                                olobo.map(el => {
+                                    return <div className="national--group__olobo">
+                                        <Link to={"/detail-page"}>
+                                            <img src={el.imageUrl} alt="img"/>
+                                            <p>{el.name}</p>
+                                            <span>{el.price}</span>
+                                        </Link>
+                                    </div>
+                                })
+                            }
+                            {
+                                soup.map(el => {
+                                    return <div className="national--group__soup">
+                                        <Link to={"/detail-page"}>
+                                            <img src={el.imageUrl} alt="img"/>
+                                            <p>{el.name}</p>
+                                            <span>{el.price}</span>
+                                        </Link>
+                                    </div>
+                                })
+                            }
+                            {
+                                lagman.map(el => {
+                                    return <div className="national--group__lagman">
+                                        <Link to={"/detail-page"}>
+                                            <img src={el.imageUrl} alt="img"/>
+                                            <p>{el.name}</p>
+                                            <span>{el.price}</span>
                                         </Link>
                                     </div>
                                 })
