@@ -5,7 +5,7 @@ import {BsCreditCardFill, BsTerminalFill} from "react-icons/bs";
 import DetailBtn from "../detail-page/DetailBtn";
 import {Link} from "react-router-dom";
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
-import {AiFillCheckCircle} from "react-icons/ai";
+// import {AiFillCheckCircle} from "react-icons/ai";
 import {beshbarmak} from "../../components/FakeBackend/FakeBackend";
 const MyOrder = () => {
     const [terminal,setTerminal] = useState(false)
