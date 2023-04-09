@@ -14,14 +14,21 @@
     &--search {
       display: flex;
       align-items: center;
-      padding: 10px 0;
+      margin: 6px 0;
+      padding: 7px 0;
+      border: 2px solid #F86D3B;
+      outline: none;
+      width: 100%;
+      border-radius: 5px;
 
       &__icon {
         font-size: 20px;
+        margin: 0 10px;
       }
 
       &__input {
-        padding-left: 10px;
+        padding: 0 10px;
+        border: none;
       }
     }
 
