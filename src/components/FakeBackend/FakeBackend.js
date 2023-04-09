@@ -342,6 +342,3 @@ export const visa = [
 
 
 
-
-
-

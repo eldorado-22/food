@@ -14,7 +14,6 @@ import {IoMdClose} from "react-icons/io";
 import {useState} from "react";
 import NewPassword from "./Signs/NewPassword/newPassword";
 import SuccReg from "./Signs/SuccReg/succReg";
-
 import DetailCard from "./pages/My-Order/Detail-Card/detail-card";
 import DetailPizza from "./pages/Pizza/Detail-Pizza/Detail-Pizza";
 import DetailDesert from "./pages/Desserts/Detail-desert";
