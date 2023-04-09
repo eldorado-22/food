@@ -1,0 +1,111 @@
+#print{
+    .print{
+        margin-top: 15%;
+        width: 90%;
+        height: 35rem;
+        &--block{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            &__icon{
+                font-size: 20rem;
+                color: #F86D3B;
+            }
+            h2{
+                margin: 15px 0;
+                font-weight: 500;
+                font-size: 37px;
+                line-height: 40px;
+                color: #000000;
+            }
+        }
+        &--btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 14%;
+            button{
+                color: #FAF9F9;
+                font-size: 27px;
+                width: 343px;
+                height: 65px;
+                background: #F86D3B;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #print{
+        .print{
+            margin: 40px 10px;
+            &--block{
+                h2{
+                    font-size: 27px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    #print{
+        .print{
+            margin: 30px 10px;
+            &--block{
+                h2{
+                    font-size: 25px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    #print{
+        .print{
+            margin: 30px 10px;
+            &--block{
+                h2{
+                    font-size: 20px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 250px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    #print{
+        .print{
+            margin: 30px 10px;
+            &--block{
+                h2{
+                    font-size: 20px;
+                }
+            }
+            &--btn{
+                button{
+                    width: 250px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}

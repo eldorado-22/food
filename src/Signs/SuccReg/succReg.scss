@@ -1,0 +1,52 @@
+#succReg{
+  width: 100%;
+  height: 100vh;
+  .succReg{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &--mark{
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: #ff6a00;
+      color: white;
+      font-size: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--info{
+      h1{
+        font-weight: 500;
+        font-size: 27px;
+        font-family: sans-serif;
+        color: #000000;
+        text-align: center;
+      }
+      p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: center;
+        color: #494949;
+        font-family: sans-serif;
+        margin-top: 30px;
+      }
+    }
+    button{
+      width: 300px;
+      padding: 15px 0;
+      border: none;
+      font-weight: 600;
+      font-size: 25px;
+      color: #FAF9F9;
+      background: #F86D3B;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+  }
+}

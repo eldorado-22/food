@@ -1,0 +1,170 @@
+#signUp{
+  .signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   &--logo{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 20px;
+     h1{
+       margin-top: -25px;
+       font-weight: 500;
+       font-size: 70px;
+       font-family: sans-serif;
+       color: #F86D3B;
+     }
+   }
+    &--form{
+      width: 60%;
+      h2{
+        font-weight: 500;
+        font-size: 23px;
+        font-family: sans-serif;
+        color: #000000;
+        margin-top: 20px;
+      }
+      &__block{
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: rgba(232, 168, 106, 0.12);
+        padding: 20px 0;
+        margin-top: 10px;
+        &--icon{
+          font-size: 30px;
+          margin: 0 20px;
+        }
+        input{
+          width: 70%;
+          background: transparent;
+          border: none;
+          font-weight: 400;
+          font-size: 17px;
+          color: #999999;
+        }
+      }
+    }
+    button{
+      width: 40%;
+      padding: 15px 0;
+      border: none;
+      font-weight: 600;
+      font-size: 25px;
+      color: #FAF9F9;
+      background: #F86D3B;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+    &--or{
+      margin-top: 30px;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3{
+        font-weight: 500;
+        font-size: 25px;
+        color: #000000;
+      }
+      div{
+        width: 40%;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+    &--links{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 30%;
+      font-size: 40px;
+      &__face{
+        color: rgba(30, 30, 217, 0.93);
+      }
+      &__twit{
+        color: dodgerblue;
+      }
+    }
+    h4{
+      font-weight: 400;
+      font-size: 15px;
+      margin: 40px 0;
+      color: #999999;
+      span{
+        font-weight: 400;
+        font-size: 15px;
+        color: #F86D3B;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 660px){
+  #signUp{
+    .signUp{
+      &--form{
+        width: 80%;
+      }
+      button{
+        width: 60%;
+      }
+      &--links{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  #signUp{
+    .signUp{
+      &--form{
+        width: 90%;
+      }
+      button{
+        width: 80%;
+      }
+      &--or{
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #signUp{
+    .signUp{
+      &--logo{
+        h1{
+          font-size: 58px;
+        }
+      }
+      &--form{
+        width: 90%;
+        h2{
+          font-size: 18px;
+        }
+        &__block{
+          input{
+            font-size: 16px;
+          }
+        }
+      }
+      button{
+        width: 80%;
+        font-size: 24px;
+      }
+      &--or{
+        width: 70%;
+        h3{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

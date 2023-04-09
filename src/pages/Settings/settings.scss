@@ -31,9 +31,18 @@
         padding: 10px 0;
       }
 
-      img {
-        padding: 10px 0;
-        width: 35%;
+      div {
+        background: #F86D3B;
+        width: 155px;
+        height: 155px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+          font-size: 90px;
+          color: white;
+        }
       }
     }
 
@@ -71,6 +80,7 @@
       align-items: center;
       padding: 10px 10px;
       margin: 20px 0;
+      cursor: pointer;
 
       h3 {
         font-weight: 500;
@@ -82,6 +92,69 @@
       &__icon {
         color: #999999;
         font-size: 2rem;
+      }
+    }
+
+    &--share {
+      width: 50%;
+      height: 250px;
+      position: absolute;
+      border-radius: 10px;
+      background: #fff;
+      border: 5px solid #F86D3B;
+      top: 65%;
+      left: 25%;
+      animation: 2s animate ease-out;
+
+      @keyframes animate {
+        0% {
+          transform: translateY(-200px);
+          transition: .5s;
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        170% {
+          transform: scale(1.1);
+        }
+
+      }
+
+      &__text {
+        display: flex;
+        align-items: center;
+
+        h2 {
+          font-weight: 600;
+          font-size: 30px;
+          color: #000;
+          padding: 0 30px;
+        }
+
+        &--icon {
+          font-size: 40px;
+          padding: 0 50%;
+        }
+      }
+
+      &__payment {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+
+        &--elKart {
+          width: 36%;
+          padding: 0 20px;
+        }
+
+        &--mBank {
+          //width: 10%;
+        }
+
+        &--visa {
+          width: 34%;
+          padding: 0 20px;
+        }
       }
     }
 
@@ -119,6 +192,7 @@
       align-items: center;
       padding: 10px 10px;
       margin: 20px 0;
+      cursor: pointer;
 
       h3 {
         font-weight: 500;
@@ -133,6 +207,83 @@
       }
     }
 
+    &--invites  {
+      width: 50%;
+      height: 250px;
+      position: absolute;
+      border-radius: 10px;
+      background: #fff;
+      border: 5px solid #F86D3B;
+      top: 65%;
+      left: 25%;
+      animation: 2s animate ease-out;
+
+      @keyframes animate {
+        0% {
+          transform: translateY(-200px);
+          transition: .5s;
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        170% {
+          transform: scale(1.1);
+        }
+
+      }
+      &__text {
+        display: flex;
+        align-items: center;
+
+        h3 {
+          font-weight: 500;
+          font-size: 24px;
+          color: black;
+          padding: 0 20px;
+          text-align: center;
+        }
+
+        &--icon {
+          color: #999999;
+          font-size: 2rem;
+        }
+      }
+
+      &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--whatsapp {
+          &__icon {
+            background: green;
+            color: #FFFFFF;
+            border-radius: 40px;
+            font-size: 60px;
+            border: none;
+          }
+        }
+
+        &--instagram {
+          margin: 0 50px;
+          &__icon {
+            color: rgba(225, 7, 7, 0.91);
+            font-size: 50px;
+            border: none;
+            margin: 20px 0;
+          }
+        }
+
+        &--facebook  {
+          &__icon {
+            color: #0543b0;
+            font-size: 60px;
+            border: none;
+          }
+        }
+      }
+    }
+
     &--notification {
       background: #FAF9F9;
       border-radius: 9px;
@@ -143,6 +294,30 @@
       align-items: center;
       padding: 10px 10px;
       margin: 20px 0;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding: 0 20px;
+      }
+
+      &__icon {
+        color: #999999;
+        font-size: 2rem;
+      }
+    }
+
+    &--logOut {
+      background: #FAF9F9;
+      border-radius: 9px;
+      width: 100%;
+      height: 70px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      margin: 50px 0 20px 0;
 
       h3 {
         font-weight: 500;

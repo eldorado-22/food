@@ -2,78 +2,67 @@ import React, {useState} from 'react';
 import sahar from "../../assets/img/image 46.png"
 import {TbCash} from "react-icons/tb";
 import {BsCreditCardFill, BsTerminalFill} from "react-icons/bs";
-import './My-Order.scss';
-import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
 import DetailBtn from "../detail-page/DetailBtn";
-
+import {Link} from "react-router-dom";
+import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
+// import {AiFillCheckCircle} from "react-icons/ai";
+import {beshbarmak} from "../../components/FakeBackend/FakeBackend";
 const MyOrder = () => {
-
-    const [counter, setCounter] = useState(1)
-    const getMoney = () => {
-        if (counter > 1) {
-            return setCounter(counter - 1)
-        } else {
-            return false
-        }
-    }
+    const [terminal,setTerminal] = useState(false)
+    const [cash,setCash] = useState(false)
     return (
         <section id='orders'>
             <div className='container'>
                 <div className='orders'>
-                    <div className="orders--B">
+
+                    <div className="orders--B" style={{display: "flex"}}>
                         <BurgerMenuTwo/>
-                        <h1 className='flex justify-center text-xl'>Cart</h1>
-                    </div>
-                    <h1 className='my-4'>My order</h1>
-                    <div className='orders--block flex justify-between h-[68px] border-solid:ring-fuchsia-500'>
-                        <div className='orders--block__image flex items-center'>
-                            <img className='w-[57px] mx-3' src={sahar} alt=""/>
-                            <h1>manty</h1>
-                        </div>
-                        <div className='orders--block__state flex items-center mx-4'>
-                            <span className='cursor-pointer' onClick={getMoney}>-</span>
-                            <h1 className='mx-4'>{counter}x</h1>
-                            <button onClick={() => setCounter(counter + 1)}>+</button>
-                        </div>
-                        <h1 className='my-4'>my order</h1>
-                        <div
-                            className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
-                            <div className='orders--block__image flex items-center'>
-                                <img className='w-[57px] mx-3' src={sahar} alt=""/>
-                                <h1>manty</h1>
-                            </div>
-                            <DetailBtn/>
-                        </div>
+                        <h1 className='flex justify-center text-xl' style={{textAlign: "center"}}>Cart</h1>
                     </div>
 
-                    <div className='pay'>
-                        <h1>Paymant Methods</h1>
-                        <div className='pay--block'>
-                            <div className='pay--block__cash'>
-                                <div className='pay--block__cash--icon'>
-                                    <TbCash/>
+                    <h2 className='my-4'>My order</h2>
+
+                    {
+                        beshbarmak.map(el => (
+                            <div className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
+                                <div className='orders--block__image flex items-center'>
+                                    <img className='w-[57px] mx-3' src={el.imageUrl} alt=""/>
+                                    <p>{el.name}</p>
                                 </div>
-                                <h1>Cash pay</h1>
+                                <DetailBtn/>
                             </div>
-
-                            <div className='pay--block__cashTwo'>
-                                <div className='pay--block__cashTwo--icon'>
+                        ))
+                    }
+                </div>
+                <div className='pay'>
+                    <h1>Payment Methods</h1>
+                    <div className='pay--block'>
+                        <div className='pay--block__cash'>
+                            <div className= 'pay--block__cash--icon'>
+                                <TbCash onClick={() => setCash(!cash)} style={{color: terminal === cash ? '#F86D3B' :  ''}}/>
+                            </div>
+                            <h1>Cash pay</h1>
+                        </div>
+                        <div className='pay--block__cash'>
+                            <div className= 'pay--block__cash--icon'>
+                                <Link to={"/detail-card"}>
                                     <BsCreditCardFill/>
-                                </div>
-                                <h1>Card</h1>
+                                </Link>
                             </div>
-                            <div className='pay--block__cashThree'>
-                                <div className='pay--block__cashThree--icon'>
-                                    <BsTerminalFill/>
-                                </div>
-                                <h1>Terminal</h1>
+                            <h1>card</h1>
+                        </div>
+                        <div className='pay--block__cash'>
+                            <div className= 'pay--block__cash--icon'>
+                                <BsTerminalFill onClick={() => setTerminal(!terminal)} style={{color: terminal !== cash ? '#F86D3B' : ''}}/>
                             </div>
+                            <h1>Terminal</h1>
                         </div>
                     </div>
-
-                    <div className='btn'>
+                </div>
+                <div className='btn'>
+                    <Link to={"/print-order"}>
                         <button>Play Now</button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </section>

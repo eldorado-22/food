@@ -1,0 +1,191 @@
+#desserts {
+  padding: 15px 0;
+
+  h1 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+  }
+
+  .desserts {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--straw {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--biscuit {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 19px;
+        color: #F86D3B;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 95%;
+        padding-top: 20px;
+      }
+
+    }
+
+    &--ice {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 17px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 130%;
+        padding-top: 20px;
+        padding-left: 10px;
+      }
+
+    }
+
+    &--strawberryCake {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 17px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 140%;
+        padding: 0 10%;
+      }
+
+    }
+
+    &--macarons {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 17px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 120%;
+        padding: 7px 20px;
+      }
+
+    }
+
+    &--sanSebastian {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 17px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 95%;
+        padding: 0 20px;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,184 @@
+#hotDrink {
+  padding: 15px 0;
+
+  h1 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+  }
+
+  .hotDrink {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--tea {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 10px 10%;
+      }
+    }
+
+    &--milk {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+        padding-right: 20px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 24%;
+
+      }
+
+      img {
+        width: 100%;
+        padding: 0 12%;
+      }
+    }
+
+    &--cappuccino {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 100%;
+        padding: 0 10%;
+      }
+    }
+
+    &--americano {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--mocco {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--latte {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 120%;
+        padding: 0 20%;
+      }
+    }
+  }
+}

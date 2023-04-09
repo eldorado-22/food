@@ -1,0 +1,181 @@
+#coldDrink {
+  padding: 15px 0;
+
+  h1 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+  }
+
+  .coldDrink {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--pepsi {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 5px 22% ;
+      }
+
+      img {
+        width: 95%;
+        padding: 10px 12%;
+      }
+    }
+
+    &--cola {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 0 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 150%;
+        padding: 0 10%;
+      }
+    }
+
+    &--fanta {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 100%;
+        padding: 18px 44px;
+      }
+    }
+
+    &--sprite {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 90%;
+        padding: 5px 34px;
+      }
+    }
+
+    &--sevenUp {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+
+      }
+
+      img {
+        width: 100%;
+        padding: 10px 40px;
+      }
+    }
+
+    &--schweppes {
+      border: 2px solid #F86D3B;
+      border-radius: 14px;
+      width: 30%;
+      height: 250px;
+      margin: 20px 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #F86D3B;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #F86D3B;
+        padding: 0 22%;
+      }
+
+      img {
+        width: 100%;
+        padding: 6px 24px;
+      }
+    }
+  }
+}
