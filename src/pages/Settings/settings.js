@@ -7,10 +7,11 @@ import {BsCashCoin, BsInstagram, BsWhatsapp} from "react-icons/bs";
 import {TbLock} from "react-icons/tb";
 import {FaUserFriends} from "react-icons/fa";
 import {MdNotifications} from "react-icons/md";
+import {Input} from "@mui/material";
 import {BiLogOut} from "react-icons/bi";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
-import {elKart, mbank, visa} from "../../components/FakeBackend/FakeBackend";
+import {data} from "../../components/FakeBackend/FakeBackend";
 import {AiFillFacebook} from "react-icons/ai";
 
 const Settings = () => {
@@ -87,21 +88,21 @@ const Settings = () => {
                             <div className="settings--share__payment">
                                 <div className="settings--share__payment--elKart">
                                     {
-                                        elKart.map(el => (
+                                        data.map(el => (
                                             <img src={el.imageUrl} alt="img"/>
                                         ))
                                     }
                                 </div>
                                 <div className="settings--share__payment--mBank">
                                     {
-                                        mbank.map(el => (
+                                        data.map(el => (
                                             <img src={el.imageUrl} alt="img"/>
                                         ))
                                     }
                                 </div>
                                 <div className="settings--share__payment--visa">
                                     {
-                                        visa.map(el => (
+                                        data.map(el => (
                                             <img src={el.imageUrl} alt="img"/>
                                         ))
                                     }

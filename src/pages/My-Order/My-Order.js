@@ -6,7 +6,7 @@ import DetailBtn from "../detail-page/DetailBtn";
 import {Link} from "react-router-dom";
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
 // import {AiFillCheckCircle} from "react-icons/ai";
-import {beshbarmak} from "../../components/FakeBackend/FakeBackend";
+import {data} from "../../components/FakeBackend/FakeBackend";
 const MyOrder = () => {
     const [terminal,setTerminal] = useState(false)
     const [cash,setCash] = useState(false)
@@ -23,7 +23,7 @@ const MyOrder = () => {
                     <h2 className='my-4'>My order</h2>
 
                     {
-                        beshbarmak.map(el => (
+                        data.map(el => (
                             <div className='orders--block flex justify-between items-center h-[68px] border-solid:ring-fuchsia-500'>
                                 <div className='orders--block__image flex items-center'>
                                     <img className='w-[57px] mx-3' src={el.imageUrl} alt=""/>

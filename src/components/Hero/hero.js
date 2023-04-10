@@ -15,7 +15,6 @@ import {BsCupHotFill} from "react-icons/bs"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const Hero = () => {
     const settings = {
         dots: true,
@@ -133,8 +132,6 @@ const Hero = () => {
                             <BsCupHotFill className="icon"/>
                             <h3 className="slider--mySwiper__card--title">Hot drink</h3>
                         </SwiperSlide>
-
-
                     </Swiper>
                 </div>
             </div>
