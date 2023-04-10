@@ -214,3 +214,12 @@ export const data = [
 
 
 console.log(data)
+    },
+];
+
+export const visa = [
+    {
+        id: 39,
+        imageUrl: "https://logowik.com/content/uploads/images/visa-payment-card1873.jpg"
+    },
+];

@@ -1,18 +1,28 @@
 import React from 'react';
+import Slider from "react-slick";
 import './hero.scss';
 import {BsSearch} from "react-icons/bs"
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Pagination} from "swiper";
-import img from "../../assets/img/image 18.png"
+import img from './../../assets/img/image 18.png'
 import {BiDish} from "react-icons/bi"
 import {GiCakeSlice} from "react-icons/gi"
 import {GiFullPizza} from "react-icons/gi"
 import {BsCupStraw} from "react-icons/bs"
 import {BsCupHotFill} from "react-icons/bs"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Hero = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <div id="hero">
             <div className="container">
@@ -27,7 +37,12 @@ const Hero = () => {
                     <div className="hero--ad">
 
                         <div className="hero--ad__one">
-                            <img src={img} alt=""/>
+
+                            <Slider {...settings}>
+                                <div>
+                                    <img src={img}  alt=""/>
+                                </div>
+                            </Slider>
                         </div>
 
                         <div className="hero--ad__two">
@@ -36,7 +51,6 @@ const Hero = () => {
                             <h1 className="hero--ad__two--sale">50% Off Now</h1>
                             <button className="hero--ad__two--btn">Order Now</button>
                         </div>
-
                     </div>
                 </div>
 
@@ -66,13 +80,13 @@ const Hero = () => {
                         className="slider--mySwiper">
 
                         <SwiperSlide className="slider--mySwiper__cardFood">
-                            <a href="#national">
+                            <a href="#">
                                 <BiDish className="icon"/>
                                 <h3 className="slider--mySwiper__card--title">National foods</h3>
                             </a>
                         </SwiperSlide>
 
-                        <a href="#desserts">
+                        <a href="#">
                             <SwiperSlide className="slider--mySwiper__card">
                                 <GiCakeSlice className="icon"/>
                                 <h3 className="slider--mySwiper__card--title">Desserts</h3>

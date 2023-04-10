@@ -1,5 +1,4 @@
 #chat {
-
   .chat {
     &--B {
       display: flex;
@@ -20,5 +19,109 @@
         padding-left: 1.5%;
       }
     }
+  }
+  .message {
+    &--card {
+      background: #FAF9F9;
+      margin: 20px;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &__desc{
+        text-align: center;
+        &--name{
+          color: #999999;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        &--title{
+          color: black;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        &--description{
+          font-size: 16px;
+          line-height: 19px;
+          color: #999999;
+        }
+      }
+    }
+    &--date{
+      p{
+        font-size: 15px;
+        color: #827B7B;
+        text-align: center;
+        padding: 20px 0;
+      }
+    }
+    &--secondCard{
+      &__one{
+        .Jasmin{
+          background: #DCD8D8DE;
+          color: #999999;
+          padding: 20px;
+          width: 50%;
+          border-radius: 6px 6px 6px 0;
+        }
+        .time{
+          font-size: 14px;
+          color: #999999;
+          padding-top: 10px;
+        }
+      }
+      &__two{
+        text-align: end;
+        margin-left: 370px;
+        .Adem{
+          background: #999999;
+          color: #E0DDDD;
+          padding: 20px;
+          width: 400px;
+          border-radius: 6px 6px 0 6px;
+        }
+        .secondTime{
+          font-size: 14px;
+          color: #999999;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #chat .message--secondCard__two .Adem {
+    width: 340px;
+  }
+  #chat .message--secondCard__two {
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  #chat .message--secondCard__two {
+    margin-left: 250px;
+  }
+  #chat .message--secondCard__two .Adem {
+    width: 270px;
+  }
+  #chat .message--card__desc--name {
+    font-size: 15px;
+  }
+  #chat .message--card__desc--title {
+    font-size: 15px;
+  }
+  #chat .message--card__desc--description {
+    font-size: 13px;
+  }
+  #chat .message--card__img{
+    img{
+      width: 40%;
+    }
+  }
+
+  #chat .message--card{
+    padding: 10px 40px;
   }
 }

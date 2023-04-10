@@ -1,5 +1,4 @@
 #hero {
-
   .hero {
     &--overview {
       font-size: 20px;
@@ -15,18 +14,21 @@
     &--search {
       display: flex;
       align-items: center;
-      padding: 10px 10px;
-      border: 2px solid #F86D3B;
-      border-radius: 5px;
       margin: 6px 0;
+      padding: 7px 0;
+      border: 2px solid #F86D3B;
+      outline: none;
+      width: 100%;
+      border-radius: 5px;
 
       &__icon {
         font-size: 20px;
+        margin: 0 10px;
       }
 
       &__input {
-        padding-left: 10px;
-        width: 100%;
+        padding: 0 10px;
+        border: none;
       }
     }
 
@@ -256,7 +258,6 @@
     .hero {
       &--ad {
         margin-top: 15px;
-
         &__one {
           img {
             width: 180px;
@@ -278,13 +279,11 @@
 
     .slider {
       padding-top: 20px;
-
-      &--title {
-        &__menu {
+      &--title{
+        &__menu{
           font-size: 20px;
         }
       }
-
       &--mySwiper {
         &__card {
           &--title {
@@ -304,34 +303,29 @@
 
 @media (max-width: 320px) {
   #hero {
-    .hero {
-      &--ad {
-        &__one {
-          img {
+    .hero{
+      &--ad{
+        &__one{
+          img{
             width: 165px;
           }
         }
-
-        &__two {
-          &--hot {
+        &__two{
+          &--hot{
             font-size: 15px;
           }
-
-          &--burger {
+          &--burger{
             font-size: 18px;
           }
-
-          &--sale {
+          &--sale{
             font-size: 12px;
           }
-
-          &--btn {
+          &--btn{
             font-size: 11px;
           }
         }
       }
     }
-
     .slider {
       &--mySwiper {
         &__card {
