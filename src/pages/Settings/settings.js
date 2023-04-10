@@ -71,7 +71,6 @@ const Settings = () => {
                         <h3>Payment Method</h3>
                     </div>
 
-                    <div onClick={()=> {logOut(); navigate('/signIn')}} className="settings--login">
                         <div style={{
                             display: payment === true ? "block" : "none",
                         }} className="settings--share">
@@ -110,7 +109,7 @@ const Settings = () => {
                             </div>
                         </div>
 
-                        <div style={{
+                        <div onClick={()=> {logOut(); navigate('/signIn')}} style={{
                             background: payment === true ? "rgba(133,133,133,0.62)" : "",
                         }} className="settings--login">
                             <TbLock className="settings--login__icon"/>
@@ -177,7 +176,6 @@ const Settings = () => {
                             <h3>Log Out</h3>
                         </div>
 
-                    </div>
                 </div>
             </div>
         </div>
