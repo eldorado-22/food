@@ -20,6 +20,8 @@ import DetailPizza from "./pages/Pizza/Detail-Pizza/Detail-Pizza";
 import DetailDesert from "./pages/Desserts/Detail-desert";
 import DetailCold from "./pages/Cold-Drink/Detail-Cold/Detail-Cold";
 import Print from "./pages/My-Order/print-page/Print";
+import HotDetail from "./pages/Hot-drink/detail-page/hot-detail";
+import EasternDetail from "./pages/Eastern-Cuisine/Eastern/easternDetail";
 function App() {
     const [codeMassage,setCodeMassage] = useState(false)
     const [codeVal,setCodeVal] = useState('')
@@ -38,7 +40,7 @@ function App() {
                 <Route path={"/message"} element={<Message/>}/>
                 <Route path={"/settings"} element={<Settings/>}/>
                 <Route path={"/"} element={<Index/>}/>
-                <Route path={"/detail-page"} element={<DetailPage/>}/>
+                <Route path={"/detail-page/:id"} element={<DetailPage/>}/>
                 <Route path={"/my-order"} element={<MyOrder/>}/>
                 <Route path={"/signUp"} element={<SignUp/>}/>
                 <Route path={"/signIn"} element={<SignIn/>}/>
@@ -48,9 +50,11 @@ function App() {
                 <Route path={"/succReg"} element={<SuccReg/>}/>
                 <Route path={"/address"} element={<DetailPage/>}/>
                 <Route path={"/detail-card"} element={<DetailCard/>}/>
-                <Route path={"/detail-desert"} element={<DetailDesert/>}/>
-                <Route path={"/detail-pizza"} element={<DetailPizza/>}/>
-                <Route path={"/cold-drink"} element={<DetailCold/>}/>
+                <Route path={"/detail-desert/:id"} element={<DetailDesert/>}/>
+                <Route path={"/detail-pizza/:id"} element={<DetailPizza/>}/>
+                <Route path={"/cold-drink/:id"} element={<DetailCold/>}/>
+                <Route path={"/hot-drink/:id"} element={<HotDetail/>}/>
+                <Route path={"/Eastern-cuisine/:id"} element={<EasternDetail/>}/>
                 <Route path={"/print-order"} element={<Print/>}/>
             </Routes>
         </>

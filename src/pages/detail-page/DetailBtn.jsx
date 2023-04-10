@@ -13,11 +13,18 @@ const DetailBtn = () => {
         task  =  task - 1
         localStorage.setItem("food", JSON.stringify(task))
     }
+    const counterChange = () => {
+      if (counter > 1){
+          return setCounter(counter - 1)
+      }else {
+          return false
+      }
+    }
 
     return (
         <div>
             <div className='detail--block__state mx-3 flex justify-between items-center w-[100px]' >
-                <span className='cursor-pointer mx-1'  onClick={() => decCash(setCounter(counter -1))}>-</span>
+                <span className='cursor-pointer mx-1'  onClick={() => counterChange()}>-</span>
                 <h1>{counter}x</h1>
                 <button className='mx-1' onClick={() => getCash(setCounter(counter + 1))}>+</button>
             </div>

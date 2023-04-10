@@ -1,23 +1,22 @@
 import React from 'react';
 import BurgerMenuTwo from "../../../components/Burger-Menu-Two/Burger-Menu-Two";
-import {strawberry} from "../../../components/FakeBackend/FakeBackend";
 import {NavLink} from "react-router-dom";
+import {useSelector} from "react-redux";
+
 
 const DetailDesert = () => {
+    const {basket} = useSelector(state => state)
+    const {name,imageUrl,price} = basket
+
     return (
         <section id='detail'>
             <div className='container'>
                 <BurgerMenuTwo/>
                 <div className='detail'>
-                    {
-                        strawberry.map(el => (
-                            <div className='detail--img'>
-                                <img className='mx-[30%]' src={el.imageUrl} alt="img"/>
-                                <p>{el.name}</p>
-                                <span>{el.price}</span>
-                            </div>
-                        ))
-                    }
+
+                    <img src={imageUrl} alt=""/>
+                    <h1>{name}</h1>
+                    <h2>{price}</h2>
 
                     <NavLink to={"/my-order"}>
                         <button className='detail--btn my-6'>ADD TO CART</button>

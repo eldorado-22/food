@@ -11,8 +11,6 @@ import {GiCakeSlice} from "react-icons/gi"
 import {GiFullPizza} from "react-icons/gi"
 import {BsCupStraw} from "react-icons/bs"
 import {BsCupHotFill} from "react-icons/bs"
-import NationalFoods from "../NationalFoods/National-Foods";
-import Desserts from "../../pages/Desserts/Desserts";
 
 const Hero = () => {
     return (
@@ -120,8 +118,6 @@ const Hero = () => {
                             <BsCupHotFill className="icon"/>
                             <h3 className="slider--mySwiper__card--title">Hot drink</h3>
                         </SwiperSlide>
-
-
                     </Swiper>
                 </div>
             </div>

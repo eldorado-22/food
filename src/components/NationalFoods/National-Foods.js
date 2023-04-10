@@ -1,9 +1,16 @@
 import React from 'react';
 import './National-Foods.scss';
-import {Link} from "react-router-dom";
-import {beshbarmak, kuurdak, lagman, olobo,many, soup} from "../FakeBackend/FakeBackend";
+import {Link, useNavigate} from "react-router-dom";
+import {data} from "../FakeBackend/FakeBackend";
+import {useDispatch} from "react-redux";
 
 const NationalFoods = () => {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const getBasket = (el) => {
+        dispatch({type: "DATA_DETAIL", payload: el})
+    }
+
         return (
             <section id="national">
                 <div className='container'>
@@ -11,69 +18,14 @@ const NationalFoods = () => {
                         <h1 className='mx-1'>National Foods</h1>
                         <div className='national--group'>
                             {
-                                beshbarmak.map(el => {
+                                data[0].map(el => {
                                     return <div className="national--group__fiveB">
-                                        <Link to={"/detail-page"}>
+                                        <div  onClick={() => {getBasket(el)
+                                            navigate(`/detail-page/${el.id}`)}}>
                                             <img src={el.imageUrl} alt="img"/>
                                             <p>{el.name}</p>
                                             <span>{el.price}</span>
-                                        </Link>
-
-                                    </div>
-                                })
-                            }
-                            {
-                                many.map(el => {
-                                    return <div className="national--group__manty">
-                                        <Link to={"/detail-page"}>
-                                            <img src={el.imageUrl} alt="img"/>
-                                            <p>{el.name}</p>
-                                            <span>{el.price}</span>
-                                        </Link>
-                                    </div>
-                                })
-                            }
-                            {
-                                kuurdak.map(el => {
-                                    return <div className="national--group__kuurdak">
-                                        <Link to={"/detail-page"}>
-                                            <img src={el.imageUrl} alt="img"/>
-                                            <p>{el.name}</p>
-                                            <span>{el.price}</span>
-                                        </Link>
-                                    </div>
-                                })
-                            }
-                            {
-                                olobo.map(el => {
-                                    return <div className="national--group__olobo">
-                                        <Link to={"/detail-page"}>
-                                            <img src={el.imageUrl} alt="img"/>
-                                            <p>{el.name}</p>
-                                            <span>{el.price}</span>
-                                        </Link>
-                                    </div>
-                                })
-                            }
-                            {
-                                soup.map(el => {
-                                    return <div className="national--group__soup">
-                                        <Link to={"/detail-page"}>
-                                            <img src={el.imageUrl} alt="img"/>
-                                            <p>{el.name}</p>
-                                            <span>{el.price}</span>
-                                        </Link>
-                                    </div>
-                                })
-                            }
-                            {
-                                lagman.map(el => {
-                                    return <div className="national--group__lagman">
-                                        <Link to={"/detail-page"}>
-                                            <img src={el.imageUrl} alt="img"/>
-                                            <p>{el.name}</p>
-                                            <span>{el.price}</span>
-                                        </Link>
+                                        </div>
                                     </div>
                                 })
                             }
