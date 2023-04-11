@@ -212,10 +212,8 @@ export const data = [
     },],
 ]
 
-
 console.log(data)
-    },
-];
+
 
 export const visa = [
     {
