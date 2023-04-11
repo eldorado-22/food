@@ -38,7 +38,6 @@
           background: #F3F2F2;
           border-radius: 6px;
         }
-
         button {
           width: 35px;
           height: 25px;
@@ -48,7 +47,6 @@
       }
     }
   }
-
   .pay {
     margin-top: 4%;
 
@@ -107,6 +105,12 @@
       line-height: 38px;
       color: #FAF9F9;
     }
+  }
+  .product{
+    width: 760px;
+    height: 60px;
+    background: #FAF9F9;
+    border: 1px solid #F86D3B;
   }
 }
 
