@@ -1,5 +1,6 @@
 #settings {
   .settings {
+
     &--B {
       display: flex;
       padding: 10px 0;
@@ -208,14 +209,14 @@
     }
 
     &--invites  {
-      width: 50%;
-      height: 250px;
+      width: 40%;
+      height: 200px;
       position: absolute;
       border-radius: 10px;
       background: #fff;
       border: 5px solid #F86D3B;
       top: 65%;
-      left: 25%;
+      left: 32%;
       animation: 2s animate ease-out;
 
       @keyframes animate {
@@ -246,6 +247,7 @@
         &--icon {
           color: #999999;
           font-size: 2rem;
+          padding-left: 30%;
         }
       }
 
@@ -332,6 +334,49 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 601px) {
+  #settings {
+    .settings{
+      &--invites{
+        width: 60%;
+        left: 23%;
+        height: 200px;
+
+        &__text {
+
+          &--icon {
+            font-size: 2rem;
+            padding-left: 27%;
+          }
+        }
+
+        &__social {
+          &--whatsapp {
+            &__icon {
+              font-size: 45px;
+              border: none;
+            }
+          }
+
+          &--instagram {
+            margin: 0 50px;
+            &__icon {
+              font-size: 45px;
+              margin: 20px 0;
+            }
+          }
+
+          &--facebook  {
+            &__icon {
+              font-size: 45px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
