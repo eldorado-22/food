@@ -17,8 +17,7 @@ const Index = () => {
 
     return (
         <div>
-            {/*{account.find(el => el.inAcc) ? <></> : <SignPage/>}*/}
-            <SignPage/>
+            {account.find(el => el.inAcc) ? <></> : <SignPage/>}
             <Header/>
             <Hero/>
             <MenuCategories/>
