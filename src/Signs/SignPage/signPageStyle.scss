@@ -1,4 +1,4 @@
-#signsPage{
+#signsPage {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -6,17 +6,50 @@
   left: 0;
   z-index: 100;
   background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  button{
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    background: #ff6a00;
-    color: white;
-    font-family: sans-serif;
-    margin: 20px 0;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
+
+  .signPage {
+    h1 {
+      font-weight: 500;
+      font-size: 40px;
+      text-align: center;
+      padding-top: 4%;
+
+      span {
+        color: #F86D3B;
+        text-transform: uppercase;
+      }
+    }
+    &--logo{
+      padding-left: 44%;
+      padding-top: 60px;
+    }
+    &--banana{
+        width: 70%;
+        margin: 0 17%;
+        padding-top: 20px;
+    }
+
+    &--btn {
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        background: #ff6a00;
+        color: white;
+        margin: 20px 20px;
+        text-transform: capitalize;
+      }
+    }
+
+
   }
+
+
 }
