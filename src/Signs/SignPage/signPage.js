@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
 import logo from './../../assets/img/foodLogo.png'
-// import burger from '../../assets/img/burder.jpg'
+import burger from './../../assets/img/burger.png'
 
 
 const SignPage = () => {
@@ -13,11 +13,11 @@ const SignPage = () => {
                 <div className="signPage">
                     <img src={logo} alt="img" className="signPage--logo"/>
                     <h1>Welcome To <span>food</span></h1>
-                    {/*<img src={banana} alt="img" className="signPage--banana"/>*/}
                    <div className="signPage--btn">
                        <button onClick={()=> navigate('/signIn')}>sign in</button>
                        <button onClick={()=> navigate("/signUp")}>sign up</button>
                    </div>
+                    <img src={burger} alt="" className='signPage--burger'/>
                 </div>
             </div>
         </div>
