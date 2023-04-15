@@ -20,7 +20,7 @@ const NationalFoods = () => {
                             {
                                 data[0].map(el => {
                                     return <div className="national--group__fiveB">
-                                        <div  onClick={() => {getBasket(el)
+                                        <div className="nationalFood"  onClick={() => {getBasket(el)
                                             navigate(`/detail-page/${el.id}`)}}>
                                             <img src={el.imageUrl} alt="img"/>
                                             <p>{el.name}</p>
