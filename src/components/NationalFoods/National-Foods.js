@@ -24,7 +24,7 @@ const NationalFoods = () => {
                                             navigate(`/detail-page/${el.id}`)}}>
                                             <img src={el.imageUrl} alt="img"/>
                                             <p>{el.name}</p>
-                                            <span>{el.price}</span>
+                                            <span>{el.price}som</span>
                                         </div>
                                     </div>
                                 })

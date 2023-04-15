@@ -11,172 +11,114 @@
   .pizza {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &--margarito {
-      border: 2px solid #F86D3B;
+      border: 1px solid #F86D3B;
       border-radius: 14px;
       width: 30%;
       height: 250px;
-      margin: 0 20px;
+      margin: 10px 20px;
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
+      .pizzaFood {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          color: #F86D3B;
+          text-align: center;
+        }
 
-      }
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #F86D3B;
+          padding: 0 22%;
+          align-items: center;
+        }
 
-      img {
-        width: 150%;
-        padding: 0 10%;
+        img {
+          width: 80%;
+          padding: 20px 10%;
+        }
       }
     }
+  }
+}
 
-    &--pepperoni {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 0 20px;
+@media (max-width: 576px) {
+  #pizza {
+    .pizza {
+      &--margarito {
+        width: 35%;
+        height: 250px;
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
+        .pizzaFood {
+          img {
+            width: 100%;
+          }
 
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 20%;
+          p {
+            font-size: 18px;
+          }
 
-      }
-
-      img {
-        width: 150%;
-        padding: 0 10%;
+          span {
+            font-size: 13px;
+          }
+        }
       }
     }
+  }
+}
 
-    &--italian {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 20px 20px;
+@media (max-width: 450px) {
+  #pizza .pizza--margarito {
+    width: 35%;
+    height: 220px;
+  }
+}
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 150%;
-        padding: 0 10%;
+@media (max-width: 380px) {
+  #pizza {
+    .pizza {
+      &--margarito {
+        width: 37%;
       }
     }
+  }
+}
 
-    &--monopoly {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 20px 20px;
+@media (max-width: 360px) {
+  #pizza {
+    .pizza {
+      &--margarito {
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 130%;
-        padding: 15px 20%;
       }
     }
+  }
+}
 
-    &--homemade {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 0 20px;
-
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 150%;
-        padding: 0 10%;
-      }
-    }
-
-    &--hawaiana {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 0 20px;
-
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 95%;
-        padding: 20px 36px;
+@media (max-width: 320px) {
+  #pizza {
+    .pizza {
+      &--margarito {
+        width: 43%;
+        margin: 10px 10px;
+        height: 200px;
+        .nationalFood{
+          img{
+            height: 115px;
+          }
+          p{
+            font-size: 12px;
+          }
+          span{
+            font-size: 9px;
+          }
+        }
       }
     }
   }

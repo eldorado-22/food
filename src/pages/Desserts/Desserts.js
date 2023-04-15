@@ -18,14 +18,14 @@ const Desserts = () => {
                         {
                             data[1].map(el => {
                                 return <div className="desserts--straw">
-                                    <div onClick={() => {
+                                    <div className="dessertFood" onClick={() => {
                                         getDesert(el)
                                         navigate(`/detail-desert/${el.id}`)
                                     }
                                     }>
                                         <img src={el.imageUrl} alt="img"/>
                                         <p>{el.name}</p>
-                                        <span>{el.price}</span>
+                                        <span>{el.price}som</span>
                                     </div>
                                 </div>
                             })

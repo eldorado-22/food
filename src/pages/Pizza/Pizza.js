@@ -19,14 +19,14 @@ const Pizza = () => {
                 <div className="pizza">
                     {data[2].map(el => {
                             return <div className="pizza--margarito">
-                                <div onClick={() => {
+                                <div className="pizzaFood" onClick={() => {
                                     getBasket(el)
                                     navigate(`/detail-pizza/${el.id}`)
                                 }
                                 }>
                                     <img src={el.imageUrl} alt="img"/>
                                     <p>{el.name}</p>
-                                    <span>{el.price}</span>
+                                    <span>{el.price}som</span>
                                 </div>
                             </div>
                         })}
