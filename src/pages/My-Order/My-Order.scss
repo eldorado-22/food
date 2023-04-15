@@ -21,28 +21,24 @@
     }
 
     &--block {
-      border: 2px solid #F86D3B;
-      border-radius: 5px;
-      box-sizing: border-box;
+
       background: #FAF9F9;
 
-      &__image {
-
-      }
-
-      &__state {
-        span {
-          text-align: center;
-          width: 35px;
-          height: 25px;
-          background: #F3F2F2;
-          border-radius: 6px;
+      &__zakaz {
+        margin: 10px 0;
+        border: 2px solid #F86D3B;
+        border-radius: 5px;
+        box-sizing: border-box;
+        h1 {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #F86D3B;
         }
-        button {
-          width: 35px;
-          height: 25px;
-          background: #F86D3B;
-          border-radius: 6px;
+        h2{
+          padding-right: 20px;
+          color: #F86D3B;
+          font-size: 20px;
         }
       }
     }
@@ -84,16 +80,13 @@
           font-size: 20px;
           line-height: 26px;
           color: #999999;
-
         }
       }
     }
   }
 
   .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 26%;
     margin-top: 12%;
 
     button {

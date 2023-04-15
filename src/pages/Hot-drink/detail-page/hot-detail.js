@@ -1,13 +1,17 @@
 import React from 'react';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import BurgerMenuTwo from "../../../components/Burger-Menu-Two/Burger-Menu-Two";
 import {NavLink} from "react-router-dom";
 import DetailBtn from "../../detail-page/DetailBtn";
 
 const HotDetail = () => {
     const {basket} = useSelector(state => state)
-
+    const dispatch = useDispatch()
     const {name,imageUrl,price} = basket
+
+    const addOrder = (el) =>{
+        dispatch({type:"ADD_ORDER", payload: el})
+    }
     return (
         <section id='detail'>
             <div className='container'>
@@ -20,7 +24,7 @@ const HotDetail = () => {
                     </div>
                     <DetailBtn/>
                     <NavLink to={"/my-order"}>
-                        <button className='detail--btn my-6'>ADD TO CART</button>
+                        <button onClick={() => addOrder(basket)} className='detail--btn my-6'>ADD TO CART</button>
                     </NavLink>
 
                 </div>
