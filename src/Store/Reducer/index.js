@@ -69,16 +69,15 @@ export const mainReducer = (state = initialState, action) => {
 
             localStorage.setItem('foodAccounts', JSON.stringify(newPassword))
             return {...state, account: JSON.parse(localStorage.getItem('foodAccounts')) || []}
-
         case "DATA_DETAIL" : {
-            return {...state, basket: action.payload}
+            return {...state, basket: {...action.payload, quantity: 1}}
         }
         case "ADD_ORDER" :
             const foundProduct = state.order.find(el => el.id === action.payload.id)
             if (foundProduct){
-                return {...state,order: state.order.map(el => el.id === foundProduct.id? {...el, quantity: el.quantity + 1}:el)}
-            }else {
-                return {...state, order:[...state.order, action.payload]}
+                return {...state,order: state.order.map(el => el.id === foundProduct.id? {...el, quantity: el.quantity + 1}: el)}
+            } else {
+                return {...state, order: [...state.order, {...action.payload, quantity: 1}]}
             }
 
         default:

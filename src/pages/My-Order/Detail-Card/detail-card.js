@@ -57,7 +57,7 @@ const DetailCard = () => {
                         <input value={value.address} style={{border: state ? "2px solid red" : ""}} type="text" name={"address"} onChange={handleChange}/>
                     </div>
                     <div className='card--btn'>
-                        <button onClick={handleClick}>Play Now</button>
+                        <button onClick={handleClick}>Pay Now</button>
                     </div>
                 </div>
             </div>
