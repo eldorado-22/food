@@ -18,13 +18,13 @@ const HotDrink = () => {
             <div className="hotDrink">
                 {data[4].map(el => {
                     return <div className="hotDrink--tea">
-                        <div onClick={() => {
+                        <div className="hots" onClick={() => {
                         getBasket(el)
                         navigate(`/hot-drink/${el.id}`)}
                         }>
-                            <img src={el.imageUrl} alt="img"/>
+                            <div className="image"><img src={el.imageUrl} alt="img"/></div>
                             <p>{el.name}</p>
-                            <span>{el.price}</span>
+                            <span>{el.price}som</span>
                         </div>
                     </div>
                 })}

@@ -8,176 +8,117 @@
     color: black;
   }
 
-
   .cuisine {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &--baklava {
-      border: 2px solid #F86D3B;
+      border: 1px solid #F86D3B;
       border-radius: 14px;
       width: 30%;
       height: 250px;
-      margin: 0 20px;
+      margin: 10px 10px;
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
+      .eastern {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          color: #F86D3B;
+          text-align: center;
+        }
 
-      }
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #F86D3B;
+          padding: 0 20%;
+          text-align: center;
 
-      img {
-        width: 140%;
-        padding: 10px 20%;
+        }
+
+        .image {
+          display: flex;
+          justify-content: center;
+          height: 160px;
+
+          img {
+            width: 90%;
+            padding: 10px 12%;
+          }
+        }
       }
     }
+  }
+}
 
-    &--shawarma {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 0 20px;
+@media (max-width: 576px) {
+  #cuisine {
+    .cuisine {
+      &--baklava {
+        width: 35%;
+        height: 200px;
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
+        .eastern {
+          .image {
+            height: 140px;
 
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
+            img {
+              width: 100%;
+              height: 130px;
+              padding: 10px 1%;
+            }
+          }
 
-      }
+          p {
+            font-size: 18px;
+          }
 
-      img {
-        width: 150%;
-        padding: 10px 10%;
-      }
-    }
-
-    &--shashlik {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 20px 20px;
-
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 92%;
-        padding: 5px 20%;
+          span {
+            font-size: 13px;
+          }
+        }
       }
     }
+  }
+}
 
-    &--kofta {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 20px 20px;
+@media (max-width: 450px) {
+  #cuisine {
+    .cuisine {
+      &--baklava {
+        height: 190px;
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
+        .eastern {
+          .image {
+            height: 120px;
 
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 140%;
-        padding: 6px 0;
+            img {
+              height: 110px;
+            }
+          }
+        }
       }
     }
+  }
+}
 
-    &--hummus {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 0 20px;
+@media (max-width: 400px) {
+  #cuisine .cuisine--baklava {
+    width: 44%;
+  }
+}
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 150%;
-        padding: 10px 10%;
-      }
-    }
-
-    &--kanafeh {
-      border: 2px solid #F86D3B;
-      border-radius: 14px;
-      width: 30%;
-      height: 250px;
-      margin: 0 20px;
-
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
-
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
-
-      }
-
-      img {
-        width: 150%;
-        padding: 10px 10%;
+@media (max-width: 360px) {
+  #cuisine {
+    .cuisine {
+      &--baklava {
+        width: 43%;
+        height: 180px;
       }
     }
   }
