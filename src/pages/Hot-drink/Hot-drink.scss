@@ -11,32 +11,46 @@
   .hotDrink {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &--tea {
-      border: 2px solid #F86D3B;
+      border: 1px solid #F86D3B;
       border-radius: 14px;
       width: 30%;
       height: 250px;
-      margin: 0 20px;
+      margin: 10px 10px;
 
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        color: #F86D3B;
-        text-align: center;
-      }
+      .hots {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #F86D3B;
-        padding: 0 22%;
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          color: #F86D3B;
+          text-align: center;
+        }
 
-      }
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          color: #F86D3B;
+          padding: 0 20%;
+          text-align: center;
 
-      img {
-        width: 150%;
-        padding: 10px 10%;
+        }
+
+        .image {
+          display: flex;
+          justify-content: center;
+          height: 160px;
+
+          img {
+            width: 90%;
+            padding: 10px 12%;
+          }
+        }
       }
     }
 
@@ -178,6 +192,84 @@
       img {
         width: 120%;
         padding: 0 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #hotDrink {
+    .hotDrink {
+      &--tea {
+        width: 35%;
+        height: 200px;
+
+        .hots {
+          .image {
+            height: 130px;
+
+            img {
+              width: 100%;
+              height: 130px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #hotDrink {
+    .hotDrink {
+      &--tea {
+        width: 44%;
+        .hots{
+          .image{
+            img{
+              padding: 10px 1%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #hotDrink {
+    .hotDrink {
+      &--tea {
+        width: 43%;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #hotDrink {
+    .hotDrink {
+      &--tea {
+        height: 170px;
+        .hots{
+          .image{
+            height: 105px;
+            img{
+              height: 100px;
+            }
+          }
+          p{
+            font-size: 15px;
+          }
+        }
       }
     }
   }

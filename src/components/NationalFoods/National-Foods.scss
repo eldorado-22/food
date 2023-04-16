@@ -20,12 +20,13 @@
         border-radius: 14px;
         width: 30%;
         height: 250px;
-        margin: 10px 20px;
+        margin: 10px 10px;
 
-        .nationalFood{
+        .nationalFood {
           display: flex;
           flex-direction: column;
           align-items: center;
+
           p {
             font-weight: 500;
             font-size: 20px;
@@ -48,28 +49,30 @@
             padding: 20px 10%;
           }
         }
-
       }
     }
   }
 }
 
 @media (max-width: 576px) {
-  #national{
-    .national{
-      &--group{
-        &__fiveB{
+  #national {
+    .national {
+      &--group {
+        &__fiveB {
           width: 35%;
           height: 200px;
-          .nationalFood{
-            img{
+
+          .nationalFood {
+            img {
               width: 100%;
               height: 130px;
             }
-            p{
+
+            p {
               font-size: 18px;
             }
-            span{
+
+            span {
               font-size: 13px;
             }
           }
@@ -80,19 +83,22 @@
 }
 
 @media (max-width: 450px) {
-  #national{
-    .national{
-      &--group{
-        &__fiveB{
+  #national {
+    .national {
+      &--group {
+        &__fiveB {
           height: 180px;
-          .nationalFood{
-            img{
+
+          .nationalFood {
+            img {
               height: 120px;
             }
-            p{
+
+            p {
               font-size: 16px;
             }
-            span{
+
+            span {
               font-size: 11px;
             }
           }
@@ -102,30 +108,26 @@
   }
 }
 
-@media (max-width: 380px) {
-  #national{
-    .national{
-      &--group{
-        &__fiveB{
-          width: 38%;
-        }
-      }
-    }
+@media (max-width: 400px) {
+  #national .national--group__fiveB {
+    width: 44%;
   }
 }
 
 @media (max-width: 360px) {
-  #national{
-    .national{
-      &--group{
-        &__fiveB{
-          width: 37%;
+  #national {
+    .national {
+      &--group {
+        &__fiveB {
+          width: 43%;
           height: 170px;
-          .nationalFood{
-            p{
+
+          .nationalFood {
+            p {
               font-size: 14px;
             }
-            span{
+
+            span {
               font-size: 10px;
             }
           }
@@ -136,21 +138,22 @@
 }
 
 @media (max-width: 320px) {
-  #national{
-    .national{
-      &--group{
-        &__fiveB{
-          width: 43%;
-          margin: 10px 10px;
+  #national {
+    .national {
+      &--group {
+        &__fiveB {
           height: 160px;
-          .nationalFood{
-            img{
+
+          .nationalFood {
+            img {
               height: 115px;
             }
-            p{
+
+            p {
               font-size: 12px;
             }
-            span{
+
+            span {
               font-size: 9px;
             }
           }

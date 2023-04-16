@@ -18,7 +18,7 @@
       border-radius: 14px;
       width: 30%;
       height: 250px;
-      margin: 10px 20px;
+      margin: 10px 10px;
 
       .pizzaFood {
         display: flex;
@@ -81,13 +81,10 @@
   }
 }
 
-@media (max-width: 380px) {
-  #pizza {
-    .pizza {
-      &--margarito {
-        width: 37%;
-      }
-    }
+@media (max-width: 400px) {
+  #pizza .pizza--margarito {
+    width: 44%;
+    margin: 10px;
   }
 }
 
@@ -95,7 +92,21 @@
   #pizza {
     .pizza {
       &--margarito {
+        width: 43%;
+        height: 190px;
 
+        .pizzaFood {
+          p {
+            font-size: 14px;
+          }
+
+          span {
+            font-size: 10px;
+          }
+          img{
+            padding: 8px 10% 20px 10%;
+          }
+        }
       }
     }
   }
@@ -107,7 +118,7 @@
       &--margarito {
         width: 43%;
         margin: 10px 10px;
-        height: 200px;
+        height: 180px;
         .nationalFood{
           img{
             height: 115px;

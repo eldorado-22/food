@@ -141,7 +141,10 @@ export const data = [
         imageUrl: 'https://winetime.md/wp-content/uploads/2022/05/schweppes_indian_250-1.png',
     }],
     [    {
-        id: 25, name: 'Tea', price: "20|25 som", imageUrl: 'https://pngimg.com/d/tea_PNG16927.png',
+        id: 25,
+        name: 'Tea',
+        price: 25,
+        imageUrl: 'https://pngimg.com/d/tea_PNG16927.png',
     }, {
         id: 26,
         name: 'Tea Milk',

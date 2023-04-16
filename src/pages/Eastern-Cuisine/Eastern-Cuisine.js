@@ -17,13 +17,13 @@ const EasternCuisine = () => {
                 <div className="cuisine">
                     {data[5].map(el => {
                             return <div className="cuisine--baklava">
-                                <div onClick={() => {
+                                <div className="eastern" onClick={() => {
                                 getBasket(el)
                                 navigate(`/Eastern-cuisine/${el.id}`)}
                                 }>
-                                    <img src={el.imageUrl} alt="img"/>
+                                    <div className="image"><img src={el.imageUrl} alt="img"/></div>
                                     <p>{el.name}</p>
-                                    <span>{el.price}</span>
+                                    <span>{el.price}som</span>
                                 </div>
                             </div>
                         })}
