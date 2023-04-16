@@ -71,3 +71,31 @@
     }
   }
 }
+@media (max-width: 320px) {
+  #detail {
+    .detail {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      &--block {
+        width: 300px;
+
+        &__state {
+        }
+      }
+
+      &--img {
+        img {
+          margin-left: 1%;
+        }
+      }
+
+      &--btn {
+        width: 250px;
+        height: 40px;
+      }
+    }
+  }
+}
