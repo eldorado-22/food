@@ -12,12 +12,12 @@ const SignPage = () => {
             <div className="container">
                 <div className="signPage">
                     <img src={logo} alt="img" className="signPage--logo"/>
-                    <h1>Welcome To <span>food</span></h1>
+                    <h1>Welcome To <span>Food</span></h1>
+                    <h4>Enjoy with meal</h4>
                    <div className="signPage--btn">
                        <button onClick={()=> navigate('/signIn')}>sign in</button>
                        <button onClick={()=> navigate("/signUp")}>sign up</button>
                    </div>
-                    <img src={burger} alt="" className='signPage--burger'/>
                 </div>
             </div>
         </div>
