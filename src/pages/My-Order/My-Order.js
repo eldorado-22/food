@@ -23,7 +23,7 @@ const MyOrder = () => {
                     </div>
 
                     <h2 className='my-4'>My order</h2>
-                    {order.length === 0 && <button onClick={() => navigate("/")} className="text-6xl text-center my-20 mx-[15rem] text-amber-500">Add order+</button>}
+                    {order.length === 0 && <button onClick={() => navigate('/')} type="button"className="orders--add text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 my-[60px]">+ Add order</button>}
                 </div>
 
                 <div className='orders--block'>
@@ -32,7 +32,7 @@ const MyOrder = () => {
                             <div key={el.id} className='orders--block__zakaz flex justify-between items-center'>
                                     <img className='px-2' width={100} src={el.imageUrl} alt=""/>
                                     <h1>{el.name}</h1>
-                                    <h1>{el.price}</h1>
+                                    <h1>{el.price}som</h1>
                                     <h2>{el.quantity}</h2>
                             </div>
                         ))

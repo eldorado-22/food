@@ -3,6 +3,7 @@ import './DetailPage.scss'
 import {NavLink} from "react-router-dom";
 import BurgerMenuTwo from "../../components/Burger-Menu-Two/Burger-Menu-Two";
 import {useDispatch, useSelector} from "react-redux";
+import {data} from "../../components/FakeBackend/FakeBackend";
 
 
 const DetailPage = () => {
@@ -26,13 +27,12 @@ const DetailPage = () => {
                     <div className='detail--img'>
                         <img src={imageUrl} alt="image"/>
                         <p>{name}</p>
-                        <h2>{price}</h2>
+                        <h2>{price}som</h2>
                         <div className="flex items-center justify-center">
                             <button>-</button>
                             <h1 className="text-3xl  px-3">{quantity}</h1>
-                            <button onClick={() => addPrice()}>+</button>
+                            <button onClick={() => aDDOrder(basket)}>+</button>
                         </div>
-
                     </div>
                     <div>
                     </div>

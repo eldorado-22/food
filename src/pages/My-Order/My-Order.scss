@@ -86,9 +86,11 @@
   }
 
   .btn {
-    margin-left: 26%;
-    margin-top: 12%;
-
+    position: absolute;
+    left: 34%;
+    right: 0;
+    top: 60%;
+    bottom: 0;
     button {
       width: 330px;
       height: 65px;
@@ -124,3 +126,120 @@
     }
   }
 }
+@media (max-width: 768px) {
+  #orders {
+    .pay {
+      &--block {
+        &__cash {
+          width: 93px;
+          height: 93px;
+
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .btn{
+      position: absolute;
+      left: 30%;
+      top: 70%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  #orders {
+    .pay {
+      &--block {
+        &__cash {
+          width: 93px;
+          height: 93px;
+
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .btn{
+      position: absolute;
+      left: 24%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  #orders {
+    .pay {
+      &--block {
+        &__cash {
+          width: 93px;
+          height: 93px;
+
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .btn {
+      position: absolute;
+      left: 16%;
+      button{
+        width: 310px;
+        height: 55px;
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  #orders {
+    .pay {
+      &--block {
+        &__cash {
+          width: 93px;
+          height: 93px;
+
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .btn {
+      position: absolute;
+      left: 11%;
+      button{
+        width: 290px;
+        height: 55px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #orders {
+    .pay {
+      &--block {
+        &__cash {
+          width: 93px;
+          height: 93px;
+
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .btn {
+      position: absolute;
+      left: 8%;
+      button{
+        width: 270px;
+        height: 47px;
+      }
+    }
+  }
+}
+

@@ -3,6 +3,7 @@ import './National-Foods.scss';
 import {Link, useNavigate} from "react-router-dom";
 import {data} from "../FakeBackend/FakeBackend";
 import {useDispatch} from "react-redux";
+import DetailPage from "../../pages/detail-page/DetailPage";
 
 const NationalFoods = () => {
     const navigate = useNavigate()
