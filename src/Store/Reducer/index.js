@@ -2,7 +2,8 @@ const initialState = {
     product: [],
     account: JSON.parse(localStorage.getItem('foodAccounts')) || [],
     basket: [],
-    order:[]
+    order:[],
+    input:""
 }
 
 
@@ -79,7 +80,8 @@ export const mainReducer = (state = initialState, action) => {
             } else {
                 return {...state, order: [...state.order, {...action.payload, quantity: 1}]}
             }
-
+        case 'GET-INPUT' :
+            return {...state,input: action.payload}
         default:
             return state
     }

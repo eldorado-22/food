@@ -5,7 +5,6 @@ import Message from "./pages/Message/message";
 import Settings from "./pages/Settings/settings";
 import DetailPage from "./pages/detail-page/DetailPage";
 import Index from "./components";
-import SignPage from "./Signs/SignPage/signPage";
 import SignUp from "./Signs/SignUp/signUp";
 import SignIn from "./Signs/SignIn/signIn";
 import Forget from "./Signs/Forget/forget";
@@ -21,6 +20,7 @@ import DetailCold from "./pages/Cold-Drink/Detail-Cold/Detail-Cold";
 import Print from "./pages/My-Order/print-page/Print";
 import HotDetail from "./pages/Hot-drink/detail-page/hot-detail";
 import EasternDetail from "./pages/Eastern-Cuisine/Eastern/easternDetail";
+import Search from "./components/Search/search";
 function App() {
     const [codeMassage,setCodeMassage] = useState(false)
     const [codeVal,setCodeVal] = useState('')
@@ -55,6 +55,7 @@ function App() {
                 <Route path={"/hot-drink/:id"} element={<HotDetail/>}/>
                 <Route path={"/Eastern-cuisine/:id"} element={<EasternDetail/>}/>
                 <Route path={"/print-order"} element={<Print/>}/>
+                <Route path={"/search-order/mis"} element={<Search/>}/>
             </Routes>
         </>
     );
