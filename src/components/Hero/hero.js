@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "react-slick";
 import './hero.scss';
 import {BsSearch} from "react-icons/bs"
@@ -14,8 +14,13 @@ import {BsCupStraw} from "react-icons/bs"
 import {BsCupHotFill} from "react-icons/bs"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {MdFastfood} from "react-icons/md";
 
 const Hero = () => {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
     const settings = {
         dots: true,
         infinite: true,
@@ -30,8 +35,8 @@ const Hero = () => {
                     <h1 className="hero--overview">Overview</h1>
                     <h3 className="hero--hello">Hello Saad! Welcome Back</h3>
                     <div className="hero--search">
-                        <BsSearch className="hero--search__icon"/>
-                        <input className="hero--search__input" type="text" placeholder="Search"/>
+                        <BsSearch className="hero--search__icon" onClick={() => navigate("/search-order/mis")}/>
+                        <input onChange={(e) => dispatch({type:"GET_INPUT", payload:e.target.value})} className="hero--search__input" type="text" placeholder="Search"/>
                     </div>
 
                     <div className="hero--ad">
@@ -81,56 +86,61 @@ const Hero = () => {
 
                         <SwiperSlide className="slider--mySwiper__cardFood">
                             <a href="#">
-                                <BiDish className="icon"/>
+                                <BiDish className="icon" onClick={() => window.scrollTo({
+                                    top:500,
+                                    left:100,
+                                    behavior:"smooth"
+
+                                })}/>
                                 <h3 className="slider--mySwiper__card--title">National foods</h3>
                             </a>
                         </SwiperSlide>
 
                         <a href="#">
                             <SwiperSlide className="slider--mySwiper__card">
-                                <GiCakeSlice className="icon"/>
+                                <GiCakeSlice className="icon" onClick={() => window.scrollTo({
+                                    top: 1303,
+                                    left: 100,
+                                    behavior:"smooth"
+                                })}/>
                                 <h3 className="slider--mySwiper__card--title">Desserts</h3>
                             </SwiperSlide>
                         </a>
 
                         <SwiperSlide className="slider--mySwiper__card">
-                            <GiFullPizza className="icon"/>
+                            <GiFullPizza className="icon" onClick={() => window.scrollTo({
+                                top: 1840,
+                                left: 100,
+                                behavior:"smooth"
+                            })}/>
                             <h3 className="slider--mySwiper__card--title">Pizza</h3>
                         </SwiperSlide>
 
                         <SwiperSlide className="slider--mySwiper__card">
-                            <BsCupStraw className="icon"/>
+                            <BsCupStraw className="icon" onClick={() => window.scrollTo({
+                                top: 2403,
+                                left: 100,
+                                behavior:"smooth"
+                            })}/>
                             <h3 className="slider--mySwiper__card--title">Cold drink</h3>
                         </SwiperSlide>
 
                         <SwiperSlide className="slider--mySwiper__card">
-                            <BsCupHotFill className="icon"/>
+                            <BsCupHotFill className="icon" onClick={() => window.scrollTo({
+                                top: 3053,
+                                left: 100,
+                                behavior:"smooth"
+                            })}/>
                             <h3 className="slider--mySwiper__card--title">Hot drink</h3>
                         </SwiperSlide>
 
                         <SwiperSlide className="slider--mySwiper__cardFood">
-                            <BiDish className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">National foods</h3>
-                        </SwiperSlide>
-
-                        <SwiperSlide className="slider--mySwiper__card">
-                            <GiCakeSlice className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">Desserts</h3>
-                        </SwiperSlide>
-
-                        <SwiperSlide className="slider--mySwiper__card">
-                            <GiFullPizza className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">Pizza</h3>
-                        </SwiperSlide>
-
-                        <SwiperSlide className="slider--mySwiper__card">
-                            <BsCupStraw className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">Cold drink</h3>
-                        </SwiperSlide>
-
-                        <SwiperSlide className="slider--mySwiper__card">
-                            <BsCupHotFill className="icon"/>
-                            <h3 className="slider--mySwiper__card--title">Hot drink</h3>
+                            <MdFastfood className="icon" onClick={() => window.scrollTo({
+                                top: 3603,
+                                left: 100,
+                                behavior:"smooth"
+                            })}/>
+                            <h3 className="slider--mySwiper__card--title">Eastern cuisine</h3>
                         </SwiperSlide>
                     </Swiper>
                 </div>
